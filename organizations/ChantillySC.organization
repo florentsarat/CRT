@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="ChantillySC">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="michelle.deivart">
+      <firstName>Michelle</firstName>
+      <lastName>Deivart</lastName>
+      <title>PreProd manager</title>
+      <jobTitle>PreProd manager</jobTitle>
+      <manager>jerome.cluzaux</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="chris.perdido">
+      <firstName>Chris</firstName>
+      <lastName>Perdido</lastName>
+      <title>Programmer</title>
+      <jobTitle>Senior Programmer</jobTitle>
+      <manager>michelle.deivart</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jimmy.liu">
+      <firstName>Jimmy</firstName>
+      <lastName>Liu</lastName>
+      <title>Programmer</title>
+      <jobTitle>Programmer</jobTitle>
+      <manager>michelle.deivart</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="raj.chopra">
+      <firstName>Raj</firstName>
+      <lastName>Chopra</lastName>
+      <title>IT manager</title>
+      <jobTitle>IT manager</jobTitle>
+      <manager>jerome.cluzaux</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jimmy.chin">
+      <firstName>Jimmy</firstName>
+      <lastName>Chin</lastName>
+      <title>IT support</title>
+      <jobTitle>IT support</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jerome.cluzaux">
+      <firstName>Jérôme</firstName>
+      <lastName>Cluzaux</lastName>
+      <title>Site Director</title>
+      <jobTitle>Site director</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="hanh.ping">
+      <firstName>Hanh</firstName>
+      <lastName>Ping</lastName>
+      <title>Vault Manager</title>
+      <jobTitle>Vault Manager</jobTitle>
+      <manager>jerome.cluzaux</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="suzie.macdonnel">
+      <firstName>Suzie</firstName>
+      <lastName>Macdonnel</lastName>
+      <title>Vault Operator</title>
+      <jobTitle>Vault Operator</jobTitle>
+      <manager>hanh.ping</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="marc.pion">
+      <firstName>Marc</firstName>
+      <lastName>Pion</lastName>
+      <title>Store Manager</title>
+      <jobTitle>Store Manager</jobTitle>
+      <manager>jerome.cluzaux</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="alain.suis">
+      <firstName>Alain</firstName>
+      <lastName>Suis</lastName>
+      <title>Store Operator</title>
+      <jobTitle>Store Operator</jobTitle>
+      <manager>marc.pion</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="bora.bakol">
+      <firstName>Bora</firstName>
+      <lastName>Bakol</lastName>
+      <title>Lv2 Manager</title>
+      <jobTitle>Lv2 Manager</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="lance.witkowsky">
+      <firstName>Lance</firstName>
+      <lastName>Witkowsky</lastName>
+      <title>Lv2</title>
+      <jobTitle>Lv2</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="mike.duplass">
+      <firstName>Mike</firstName>
+      <lastName>Duplass</lastName>
+      <title>PM Manager</title>
+      <jobTitle>PM Manager</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="heather.reglis">
+      <firstName>Heather</firstName>
+      <lastName>Reglis</lastName>
+      <title>CS Manager</title>
+      <jobTitle>CS Manager</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="eric.ketchup">
+      <firstName>Eric</firstName>
+      <lastName>Ketchup</lastName>
+      <title>Despatch Operator</title>
+      <jobTitle>Despatch Operator</jobTitle>
+      <manager>jerome.cluzaux</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="rob.traven">
+      <firstName>Rob</firstName>
+      <lastName>Traven</lastName>
+      <title>PM</title>
+      <jobTitle>PM</jobTitle>
+      <manager>mike.duplass</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="edouard.richarte">
+      <firstName>Edouard</firstName>
+      <lastName>Richarte</lastName>
+      <title>Perso Manager</title>
+      <jobTitle>Perso Manager</jobTitle>
+      <manager>jerome.cluzaux</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="damien.dub">
+      <firstName>Damien</firstName>
+      <lastName>Dub</lastName>
+      <title>Perso Operator</title>
+      <jobTitle>Perso Operator</jobTitle>
+      <manager>edouard.richarte</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="ludovic.gauthier">
+      <firstName>Ludovic</firstName>
+      <lastName>Gauthier</lastName>
+      <title>Dispatch Manager</title>
+      <jobTitle>Dispatch Mananger</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="ludo.daclun">
+      <firstName>Ludo</firstName>
+      <lastName>Daclun</lastName>
+      <manager>heather.reglis</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Member">
+      <displayName>Member</displayName>
+    </role>
+    <role name="Manager">
+      <displayName>Manager</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Preprod">
+      <displayName>Preprod</displayName>
+    </group>
+    <group name="Programming" parentPath="/Preprod">
+      <displayName>Programming</displayName>
+    </group>
+    <group name="Project Management" parentPath="/Preprod">
+      <displayName>PM</displayName>
+    </group>
+    <group name="Prod">
+      <displayName>Prod</displayName>
+    </group>
+    <group name="Vault" parentPath="/Prod">
+      <displayName>Vault</displayName>
+    </group>
+    <group name="Perso" parentPath="/Prod">
+      <displayName>Perso</displayName>
+    </group>
+    <group name="Store" parentPath="/Prod">
+      <displayName>Store</displayName>
+    </group>
+    <group name="Dispatch" parentPath="/Prod">
+      <displayName>Dispatch</displayName>
+    </group>
+    <group name="Support">
+      <displayName>Support</displayName>
+    </group>
+    <group name="IT" parentPath="/Support">
+      <displayName>IT</displayName>
+    </group>
+    <group name="Lv2 Support" parentPath="/Support">
+      <displayName>Lv2 Support</displayName>
+    </group>
+    <group name="Management">
+      <displayName>Management</displayName>
+    </group>
+    <group name="Customer Service">
+      <displayName>Customer Service</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>michelle.deivart</userName>
+      <roleName>Manager</roleName>
+      <groupName>Programming</groupName>
+      <groupParentPath>/Preprod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>chris.perdido</userName>
+      <roleName>Member</roleName>
+      <groupName>Programming</groupName>
+      <groupParentPath>/Preprod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jimmy.liu</userName>
+      <roleName>Member</roleName>
+      <groupName>Programming</groupName>
+      <groupParentPath>/Preprod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>raj.chopra</userName>
+      <roleName>Manager</roleName>
+      <groupName>IT</groupName>
+      <groupParentPath>/Support</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jimmy.chin</userName>
+      <roleName>Member</roleName>
+      <groupName>IT</groupName>
+      <groupParentPath>/Support</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jerome.cluzaux</userName>
+      <roleName>Manager</roleName>
+      <groupName>Management</groupName>
+    </membership>
+    <membership>
+      <userName>hanh.ping</userName>
+      <roleName>Manager</roleName>
+      <groupName>Vault</groupName>
+      <groupParentPath>/Prod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>suzie.macdonnel</userName>
+      <roleName>Member</roleName>
+      <groupName>Vault</groupName>
+      <groupParentPath>/Prod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>marc.pion</userName>
+      <roleName>Manager</roleName>
+      <groupName>Store</groupName>
+      <groupParentPath>/Prod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>alain.suis</userName>
+      <roleName>Member</roleName>
+      <groupName>Store</groupName>
+      <groupParentPath>/Prod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>bora.bakol</userName>
+      <roleName>Manager</roleName>
+      <groupName>Lv2 Support</groupName>
+      <groupParentPath>/Support</groupParentPath>
+    </membership>
+    <membership>
+      <userName>lance.witkowsky</userName>
+      <roleName>Member</roleName>
+      <groupName>Lv2 Support</groupName>
+      <groupParentPath>/Support</groupParentPath>
+    </membership>
+    <membership>
+      <userName>mike.duplass</userName>
+      <roleName>Manager</roleName>
+      <groupName>Project Management</groupName>
+      <groupParentPath>/Preprod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>heather.reglis</userName>
+      <roleName>Manager</roleName>
+      <groupName>Customer Service</groupName>
+    </membership>
+    <membership>
+      <userName>eric.ketchup</userName>
+      <roleName>Member</roleName>
+      <groupName>Dispatch</groupName>
+      <groupParentPath>/Prod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>rob.traven</userName>
+      <roleName>Member</roleName>
+      <groupName>Project Management</groupName>
+      <groupParentPath>/Preprod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>edouard.richarte</userName>
+      <roleName>Manager</roleName>
+      <groupName>Perso</groupName>
+      <groupParentPath>/Prod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>damien.dub</userName>
+      <roleName>Member</roleName>
+      <groupName>Perso</groupName>
+      <groupParentPath>/Prod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ludovic.gauthier</userName>
+      <roleName>Manager</roleName>
+      <groupName>Dispatch</groupName>
+      <groupParentPath>/Prod</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ludo.daclun</userName>
+      <roleName>Member</roleName>
+      <groupName>Customer Service</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>

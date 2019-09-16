@@ -1,0 +1,780 @@
+{
+  "designerVersion" : "1.9.53",
+  "id" : "valideCardOrder",
+  "name" : "valideCardOrder",
+  "lastUpdate" : 1568300255609,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "d624d8b4-1b3a-4bc4-aa06-549d488192a3",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : {
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "widgetId" : {
+          "type" : "constant",
+          "value" : "pbText"
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation"
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "{{ task.displayDescription }}"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "class" : {
+          "type" : "constant",
+          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+        },
+        "dimension" : {
+          "type" : "constant",
+          "value" : 12
+        },
+        "labelPosition" : {
+          "type" : "constant",
+          "value" : "top"
+        },
+        "labelWidth" : {
+          "type" : "constant",
+          "value" : 4
+        },
+        "allowHTML" : {
+          "type" : "constant",
+          "value" : true
+        }
+      },
+      "reference" : "f8e4586d-9e37-4806-a302-853050d46874",
+      "hasValidationError" : false,
+      "id" : "pbText"
+    } ], [ {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : {
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
+        },
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "widgetId" : {
+          "type" : "constant"
+        },
+        "readOnly" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "class" : {
+          "type" : "constant",
+          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.WidgetContainer"
+        },
+        "dimension" : {
+          "type" : "constant",
+          "value" : 12
+        }
+      },
+      "reference" : "32b640e8-a936-4a7e-9e91-7138f7b46ac0",
+      "hasValidationError" : false,
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 4
+        },
+        "propertyValues" : {
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "!cardOrderFromRequest.customerRequesting"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbText"
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Customer Requesting"
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{cardOrderFromRequest.customerRequesting}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "b94dc3b1-27fd-4d37-ad4a-43072b32628a",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 4
+        },
+        "propertyValues" : {
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "!cardOrderFromRequest.targetDeliveryDate"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbText"
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Target Delivery Date"
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{cardOrderFromRequest.targetDeliveryDate|uiDate}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "4a2fd1f1-d6e4-4dd8-9bdd-9ec391badc7d",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 4
+        },
+        "propertyValues" : {
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "!cardOrderFromRequest.priority"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbText"
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Priority"
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{cardOrderFromRequest.priority}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "192d324f-81d1-47ff-828a-37509031af7b",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 6
+        },
+        "propertyValues" : {
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "!cardOrderFromRequest.newItemId"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbText"
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "New Item Id"
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{cardOrderFromRequest.newItemId}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "6577ce28-44ef-43cc-8a72-b2668849684b",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 6
+        },
+        "propertyValues" : {
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbInput"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 1
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Qty To Order"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "number"
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "placeholder" : {
+            "type" : "constant"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.InputWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "cardOrderFromRequest.qtyToOrder"
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "min" : {
+            "type" : "constant",
+            "value" : 0
+          },
+          "max" : {
+            "type" : "constant"
+          },
+          "step" : {
+            "type" : "constant",
+            "value" : 250
+          }
+        },
+        "reference" : "52d95a48-98e1-4069-99a9-a7540b4306ce",
+        "hasValidationError" : false,
+        "id" : "pbInput"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 6
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Refuse Order"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "danger"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Submit task"
+          },
+          "assign" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "responseStatusCode" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "dataToSend" : {
+            "type" : "constant"
+          },
+          "dataFromSuccess" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "closeOnSuccess" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "dataFromError" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation"
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "collectionPosition" : {
+            "type" : "constant",
+            "value" : "Last"
+          },
+          "valueToAdd" : {
+            "type" : "constant"
+          },
+          "removeItem" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "c6ccf5b6-7a5b-44f9-84d7-d937367754f1",
+        "hasValidationError" : false,
+        "id" : "pbButton"
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 6
+        },
+        "propertyValues" : {
+          "removeItem" : {
+            "type" : "variable"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbButton"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "success"
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Accept Order"
+          },
+          "dataToSend" : {
+            "type" : "expression",
+            "value" : "formOutputSuccess"
+          },
+          "dataFromError" : {
+            "type" : "variable",
+            "value" : "formOutput._submitError"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "collectionPosition" : {
+            "type" : "constant"
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation",
+            "value" : "/bonita"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Submit task"
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "valueToAdd" : {
+            "type" : "expression"
+          },
+          "disabled" : {
+            "type" : "expression",
+            "value" : "$form.$invalid"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "assign" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "responseStatusCode" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "dataFromSuccess" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "closeOnSuccess" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : ""
+          }
+        },
+        "reference" : "26d79560-5460-4a47-a350-8194e97ae957",
+        "hasValidationError" : false,
+        "id" : "pbButton"
+      } ] ]
+    } ] ]
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "hidden" : {
+        "type" : "expression",
+        "value" : "!formOutput._submitError.message"
+      },
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
+      },
+      "widgetId" : {
+        "type" : "constant",
+        "value" : "pbText"
+      },
+      "readOnly" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "label" : {
+        "type" : "interpolation"
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "class" : {
+        "type" : "constant",
+        "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+      },
+      "dimension" : {
+        "type" : "constant",
+        "value" : 12
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      }
+    },
+    "reference" : "cf50c6f8-0b72-4e7a-9a22-a611604f3961",
+    "hasValidationError" : false,
+    "id" : "pbText"
+  } ] ],
+  "assets" : [ {
+    "id" : "ae23072a-d122-4fe7-aece-463dac13939b",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "task" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}",
+      "exposed" : false
+    },
+    "submit_errors_list" : {
+      "type" : "expression",
+      "value" : "if($data.formOutput && $data.formOutput._submitError && $data.formOutput._submitError.explanations){\n\tconst liElements = $data.formOutput._submitError.explanations\n\t\t.filter(cause => cause !== null)\n\t\t.map(cause => \"<li>\" + cause + \"</li>\")\n\t\t.join('');\n\tif(liElements){\n\t\treturn \"<ul>\" + liElements + \"</ul>\";\n\t}\n}",
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : "if( $data.cardOrderFromRequest ){\n\treturn {\n\t\t//map cardOrderFromRequest variable to expected task contract input\n\t\tcardOrderFromRequestInput: {\n\t\t\tstockStatus: $data.cardOrderFromRequest.stockStatus !== undefined ? $data.cardOrderFromRequest.stockStatus : null,\n\t\t\tqtyToOrder: $data.cardOrderFromRequest.qtyToOrder !== undefined ? $data.cardOrderFromRequest.qtyToOrder : null\n\t\t}\n\t}\n}",
+      "exposed" : false
+    },
+    "cardOrderFromRequest" : {
+      "type" : "url",
+      "value" : "../{{context.cardOrderFromRequest_ref.link}}",
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}/context",
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : "id",
+      "exposed" : false
+    },
+    "formOutputSuccess" : {
+      "type" : "expression",
+      "value" : "if( $data.cardOrderFromRequest ){\n\treturn {\n\t\t//map cardOrderFromRequest variable to expected task contract input\n\t\tcardOrderFromRequestInput: {\n\t\t\tstockStatus: \"Order Validated\",\n\t\t\tqtyToOrder: $data.cardOrderFromRequest.qtyToOrder !== undefined ? $data.cardOrderFromRequest.qtyToOrder : null\n\t\t}\n\t}\n}",
+      "exposed" : false
+    },
+    "formOutputFailure" : {
+      "type" : "expression",
+      "value" : "if( $data.cardOrderFromRequest ){\n\treturn {\n\t\t//map cardOrderFromRequest variable to expected task contract input\n\t\tcardOrderFromRequestInput: {\n\t\t\tstockStatus: \"Order Refused\",\n\t\t\tqtyToOrder: $data.cardOrderFromRequest.qtyToOrder !== undefined ? $data.cardOrderFromRequest.qtyToOrder : null\n\t\t}\n\t}\n}",
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "735d49bf-4763-404a-b4e9-04da3afc53a8",
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
+}

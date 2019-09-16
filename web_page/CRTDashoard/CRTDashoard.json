@@ -1,0 +1,832 @@
+{
+  "designerVersion" : "1.9.53",
+  "id" : "CRTDashoard",
+  "name" : "CRTDashoard",
+<<<<<<< HEAD
+  "lastUpdate" : 1568642042759,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "b15e71d3-ac7f-4377-91a4-95b1281fbc7f",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Change Request Tool test GIT"
+=======
+  "lastUpdate" : 1568299920343,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "b15e71d3-ac7f-4377-91a4-95b1281fbc7f",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Change Request Tool test"
+>>>>>>> branch 'master' of https://github.com/florentsarat/CRT
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 2"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        }
+      },
+      "reference" : "f2249a29-b480-4fe4-9d5d-0c480e90b227",
+      "hasValidationError" : false,
+      "id" : "pbTitle"
+    } ] ]
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "3e8b6775-5d8d-4365-8feb-d359862c47af",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 2
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Proc Ins"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "process"
+        },
+        "targetUrl" : {
+          "type" : "expression",
+          "value" : ""
+        },
+        "pageToken" : {
+          "type" : "constant"
+        },
+        "processName" : {
+          "type" : "constant",
+          "value" : "Card Item Change Request"
+        },
+        "processVersion" : {
+          "type" : "constant",
+          "value" : "1.0"
+        },
+        "taskId" : {
+          "type" : "constant"
+        },
+        "caseId" : {
+          "type" : "constant"
+        },
+        "target" : {
+          "type" : "constant",
+          "value" : "_self"
+        },
+        "appToken" : {
+          "type" : "constant"
+        },
+        "urlParams" : {
+          "type" : "constant"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "buttonStyle" : {
+          "type" : "constant",
+          "value" : "primary"
+        }
+      },
+      "reference" : "39b30a0d-4af0-48cd-a5c9-c9200ecee249",
+      "hasValidationError" : false,
+      "id" : "pbLink"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 2
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Custom URL"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "URL"
+        },
+        "targetUrl" : {
+          "type" : "expression",
+          "value" : "\"/bonita/portal/resource/process/Card%20Item%20Change%20Request/1.0/content/?id=\"+processDef[0].id"
+        },
+        "pageToken" : {
+          "type" : "constant"
+        },
+        "processName" : {
+          "type" : "constant"
+        },
+        "processVersion" : {
+          "type" : "constant"
+        },
+        "taskId" : {
+          "type" : "constant"
+        },
+        "caseId" : {
+          "type" : "constant"
+        },
+        "target" : {
+          "type" : "constant",
+          "value" : "_self"
+        },
+        "appToken" : {
+          "type" : "constant"
+        },
+        "urlParams" : {
+          "type" : "constant"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "buttonStyle" : {
+          "type" : "constant",
+          "value" : "success"
+        }
+      },
+      "reference" : "f0d0b793-62b0-4728-8b09-b80b52ac0e15",
+      "hasValidationError" : false,
+      "id" : "pbLink"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 2
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Link"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "task"
+        },
+        "targetUrl" : {
+          "type" : "constant",
+          "value" : "http://"
+        },
+        "pageToken" : {
+          "type" : "constant"
+        },
+        "processName" : {
+          "type" : "constant"
+        },
+        "processVersion" : {
+          "type" : "constant"
+        },
+        "taskId" : {
+          "type" : "constant",
+          "value" : "220012"
+        },
+        "caseId" : {
+          "type" : "constant"
+        },
+        "target" : {
+          "type" : "constant",
+          "value" : "_self"
+        },
+        "appToken" : {
+          "type" : "constant"
+        },
+        "urlParams" : {
+          "type" : "constant"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "buttonStyle" : {
+          "type" : "constant",
+          "value" : "danger"
+        }
+      },
+      "reference" : "fbeb26d2-cd81-4a18-b096-1c836629041b",
+      "hasValidationError" : false,
+      "id" : "pbLink"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 3
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "disabled" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Submit"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "buttonStyle" : {
+          "type" : "constant",
+          "value" : "default"
+        },
+        "action" : {
+          "type" : "constant",
+          "value" : "PUT"
+        },
+        "assign" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "url" : {
+          "type" : "interpolation"
+        },
+        "responseStatusCode" : {
+          "type" : "variable",
+          "value" : ""
+        },
+        "dataToSend" : {
+          "type" : "constant"
+        },
+        "dataFromSuccess" : {
+          "type" : "variable",
+          "value" : ""
+        },
+        "closeOnSuccess" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "dataFromError" : {
+          "type" : "variable",
+          "value" : ""
+        },
+        "targetUrlOnSuccess" : {
+          "type" : "interpolation"
+        },
+        "collectionToModify" : {
+          "type" : "variable"
+        },
+        "modalId" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "collectionPosition" : {
+          "type" : "constant",
+          "value" : "Last"
+        },
+        "valueToAdd" : {
+          "type" : "constant"
+        },
+        "removeItem" : {
+          "type" : "variable"
+        }
+      },
+      "reference" : "ce03ea69-a038-49e7-bf1d-69a248c71e81",
+      "hasValidationError" : false,
+      "id" : "pbButton"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 3
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "disabled" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "label" : {
+          "type" : "interpolation",
+          "value" : "Start process from button"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "buttonStyle" : {
+          "type" : "constant",
+          "value" : "info"
+        },
+        "action" : {
+          "type" : "constant",
+          "value" : "POST"
+        },
+        "assign" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "url" : {
+          "type" : "interpolation",
+          "value" : "{{getProcessURL}}"
+        },
+        "responseStatusCode" : {
+          "type" : "variable",
+          "value" : ""
+        },
+        "dataToSend" : {
+          "type" : "expression",
+          "value" : "formInput"
+        },
+        "dataFromSuccess" : {
+          "type" : "variable",
+          "value" : "successfulResponse"
+        },
+        "closeOnSuccess" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "dataFromError" : {
+          "type" : "variable",
+          "value" : ""
+        },
+        "targetUrlOnSuccess" : {
+          "type" : "interpolation",
+          "value" : ""
+        },
+        "collectionToModify" : {
+          "type" : "variable"
+        },
+        "modalId" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "collectionPosition" : {
+          "type" : "constant",
+          "value" : "Last"
+        },
+        "valueToAdd" : {
+          "type" : "constant"
+        },
+        "removeItem" : {
+          "type" : "variable"
+        }
+      },
+      "reference" : "95a13342-e11e-41b6-acb6-ee93b177e484",
+      "hasValidationError" : false,
+      "id" : "pbButton"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "submitButtonSuccessfulResponseValue" : {
+          "type" : "expression",
+          "value" : "successfulResponse"
+        },
+        "bonitaWebAppName" : {
+          "type" : "constant",
+          "value" : "bonita"
+        }
+      },
+      "reference" : "24b72749-adc7-4511-9ca6-a4dafaee8ff2",
+      "hasValidationError" : false,
+      "id" : "customFromIniateAssignandStartFirstHumanTask"
+    } ] ]
+  } ], [ {
+    "type" : "tabsContainer",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      }
+    },
+    "reference" : "d0f1d9ad-0af2-4542-a76c-ad8b1cf1ccba",
+    "hasValidationError" : false,
+    "id" : "pbTabsContainer",
+    "tabs" : [ {
+      "container" : {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "a71a7e90-b123-4d22-8004-33880a65fe89",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "text" : {
+              "type" : "interpolation",
+              "value" : "My ongoing change requests (custom widget)"
+            },
+            "level" : {
+              "type" : "constant",
+              "value" : "Level 3"
+            },
+            "alignment" : {
+              "type" : "constant",
+              "value" : "left"
+            }
+          },
+          "reference" : "d2bbeb16-f90b-4919-be0e-7f7ddbcda4ca",
+          "hasValidationError" : false,
+          "id" : "pbTitle"
+        } ], [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "value" : {
+              "type" : "constant",
+              "value" : "This is the initial value"
+            },
+            "color" : {
+              "type" : "constant",
+              "value" : "RebeccaPurple"
+            },
+            "background" : {
+              "type" : "constant",
+              "value" : "Yellow"
+            }
+          },
+          "reference" : "2fba9165-89fe-4bde-87c1-d50dcc4bc1b2",
+          "hasValidationError" : false,
+          "id" : "customAdvanceTable"
+        } ], [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "text" : {
+              "type" : "interpolation",
+              "value" : "All ongoing change requests"
+            },
+            "level" : {
+              "type" : "constant",
+              "value" : "Level 4"
+            },
+            "alignment" : {
+              "type" : "constant",
+              "value" : "left"
+            }
+          },
+          "reference" : "6249bd54-8d24-4e7d-80a4-eb6bc1718521",
+          "hasValidationError" : false,
+          "id" : "pbTitle"
+        } ], [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "headers" : {
+              "type" : "constant",
+              "value" : [ "Customer", "Delivery Date", "Priority", "Status" ]
+            },
+            "content" : {
+              "type" : "expression",
+              "value" : "allPendingRequests"
+            },
+            "columnsKey" : {
+              "type" : "constant",
+              "value" : [ "customerRequesting", "targetDeliveryDate", "priority", "status" ]
+            },
+            "selectedRow" : {
+              "type" : "variable",
+              "value" : ""
+            }
+          },
+          "reference" : "6117da92-20f6-44c7-b97b-a2d8f71f29a1",
+          "hasValidationError" : false,
+          "id" : "pbTable"
+        } ] ]
+      },
+      "title" : "Change Requests"
+    }, {
+      "container" : {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "8057e737-ecc7-4a3e-a9a5-f459bf10d283",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "headers" : {
+              "type" : "constant",
+              "value" : [ "Item", "Qty", "Price", "Status" ]
+            },
+            "content" : {
+              "type" : "expression",
+              "value" : "allpurchase"
+            },
+            "columnsKey" : {
+              "type" : "constant",
+              "value" : [ "itemRef", "qty", "price", "orderStatus" ]
+            },
+            "selectedRow" : {
+              "type" : "variable",
+              "value" : ""
+            }
+          },
+          "reference" : "0acaef8d-03b2-4001-9a23-35fe543b574b",
+          "hasValidationError" : false,
+          "id" : "pbTable"
+        } ] ]
+      },
+      "title" : "Purchage Orders"
+    }, {
+      "container" : {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "f353211c-dff6-4755-9440-8667957c44d5",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [ [ ] ]
+      },
+      "title" : "Task View"
+    } ]
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "739222d6-31e3-455a-9d10-e840974d2cee",
+    "hasValidationError" : false,
+    "id" : "pbContainer",
+    "rows" : [ [ ] ]
+  } ] ],
+  "assets" : [ {
+    "id" : "01784230-29f2-4975-91a9-57acb4a3a542",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "mySession" : {
+      "type" : "url",
+      "value" : "../API/system/session/unusedId",
+      "exposed" : false
+    },
+    "myPendingRequests" : {
+      "type" : "url",
+      "value" : "../API/bdm/businessData/com.company.model.itemChangeRequestv2?q=getAllPendingByUser&p=0&c=10&f=userId={{mySession.user_id}}",
+      "exposed" : false
+    },
+    "allPendingRequests" : {
+      "type" : "url",
+      "value" : "../API/bdm/businessData/com.company.model.itemChangeRequestv2?q=getListForAll&p=0&c=10",
+      "exposed" : false
+    },
+    "allpurchase" : {
+      "type" : "url",
+      "value" : "../API/bdm/businessData/com.company.model.purchaseOrder?q=find&p=0&c=10",
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}/context",
+      "exposed" : false
+    },
+    "task" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}",
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : "id",
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : "{ \"itemType\" : \"\", \"customer\" : \"\", \"targetdate\" : \"12/09/2019\" }",
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : "return {\n\titemType: $data.formInput.itemType,\n\tcustomer: $data.formInput.customer,\n\ttargetdate: $data.formInput.targetdate\n}",
+      "exposed" : false
+    },
+    "processDef" : {
+      "type" : "url",
+      "value" : "../API/bpm/process?p=0&c=1&f=name=Card%20Item%20Change%20Request&f=activationState=ENABLED&o=version%20DESC",
+      "exposed" : false
+    },
+    "getProcessURL" : {
+      "type" : "expression",
+      "value" : "var process = $data.processDef[0];\nreturn \"/bonita/API/bpm/process/\" + process.id + \"/instantiation\";",
+      "exposed" : false
+    },
+    "successfulResponse" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "getTaskId" : {
+      "type" : "url",
+      "value" : "../API/bpm/humanTask?p=0&c=10&f=name=DefineRequest&f=caseId={{successfulResponse.caseId}}",
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "32cc1808-9741-4b5a-9c0c-15017c91e49f",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel modelVersion="1.0" productVersion="7.9.2">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.cardOrder">
+            <fields>
+                <field type="STRING" length="255" name="itemRef" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="qtyToOrder" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="orderStatus" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.itemChangeRequestv2">
+            <fields>
+                <field type="LONG" length="255" name="userId" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="customerRequesting" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="oldItemId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="newItemId" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="targetDeliveryDate" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="priority" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="status" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="customerJustification" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="feasibilityResultPP" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="feasibilityResultProd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="feasibilityRejectReasonPP" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="feasibilityRejectReasonProd" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="dryTestResult" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="customerValidation" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="goLiveDate" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="stockStatus" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="changeCost" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="items" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="qtyToOrder" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="Owner" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="caseID" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries>
+                <query name="getListForAll" content="SELECT i &#xA;FROM itemChangeRequestv2 i &#xA;ORDER BY i.persistenceId ASC" returnType="java.util.List">
+                    <queryParameters/>
+                </query>
+                <query name="getAllPendingByUser" content="SELECT i &#xD;&#xA;FROM itemChangeRequestv2 i &#xD;&#xA;WHERE i.userId = :userId&#xD;&#xA;ORDER BY i.persistenceId ASC" returnType="java.util.List">
+                    <queryParameters>
+                        <queryParameter name="userId" className="java.lang.Long"/>
+                    </queryParameters>
+                </query>
+            </queries>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.purchaseOrder">
+            <fields>
+                <field type="STRING" length="255" name="itemRef" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="qty" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="price" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="orderStatus" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

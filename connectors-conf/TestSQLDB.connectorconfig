@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="database-mssqlserver" version="1.2.1" name="TestSQLDB" modelVersion="7.9.0-002">
+  <parameters key="driver">
+    <expression xsi:type="expression:Expression" name="com.microsoft.sqlserver.jdbc.SQLServerDriver" content="com.microsoft.sqlserver.jdbc.SQLServerDriver" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="jdbc:sqlserver://LAP-00279\SQLEXPRESS:1433;databaseName=fsarTestDB" content="jdbc:sqlserver://LAP-00279\SQLEXPRESS:1433;databaseName=fsarTestDB" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="script">
+    <expression xsi:type="expression:Expression" name="script()" content="String mySQLRequest = &quot;SELECT [stock]&quot;&#xD;&#xA;mySQLRequest += &quot; FROM [fsarTestDB].[dbo].[itemsAvalaible]&quot;;&#xD;&#xA;mySQLRequest += &quot; WHERE [itemRef] like 'CH01'&quot;;&#xD;&#xA;return mySQLRequest;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="ocssql" content="ocssql" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="ocssql" content="ocssql" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="separator">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="outputType">
+    <expression xsi:type="expression:Expression" name="outputType" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>
