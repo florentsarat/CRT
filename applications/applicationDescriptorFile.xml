@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
-    <application token="CRT" version="1.0" profile="User" homePage="page1" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_bootstrapdefaulttheme">
+    <application token="CRT" version="1.0" profile="User" homePage="Dashboard" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_bootstrapdefaulttheme">
         <displayName>CRT</displayName>
         <applicationPages>
-            <applicationPage customPage="custompage_CRTDashoard" token="page1"/>
+            <applicationPage customPage="custompage_CRTDashoard" token="Dashboard"/>
         </applicationPages>
         <applicationMenus>
-            <applicationMenu applicationPage="page1">
+            <applicationMenu applicationPage="Dashboard">
                 <displayName>My menu</displayName>
             </applicationMenu>
         </applicationMenus>

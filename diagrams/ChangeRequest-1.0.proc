@@ -354,44 +354,6 @@
           <data xmi:type="process:Data" xmi:id="_QwbigM-sEemGzZ4QJjrAcw" name="stockValue" dataType="_xuKhkc8IEemAgNsKV_wbPw">
             <defaultValue xmi:type="expression:Expression" xmi:id="_Qwbigc-sEemGzZ4QJjrAcw" name="0" content="0"/>
           </data>
-          <connectors xmi:type="process:Connector" xmi:id="_rkv-MM8rEemDzeAQtbp72w" name="CheckIfStockIfAvailable" definitionId="database-mssqlserver" event="ON_ENTER" definitionVersion="1.2.1">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_rkv-Mc8rEemDzeAQtbp72w" definitionId="database-mssqlserver" version="1.2.1" modelVersion="7.9.0-002">
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rkv-Ms8rEemDzeAQtbp72w" key="driver">
-                <expression xmi:type="expression:Expression" xmi:id="_rkv-M88rEemDzeAQtbp72w" name="com.microsoft.sqlserver.jdbc.SQLServerDriver" content="com.microsoft.sqlserver.jdbc.SQLServerDriver" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rkv-NM8rEemDzeAQtbp72w" key="url">
-                <expression xmi:type="expression:Expression" xmi:id="_rkv-Nc8rEemDzeAQtbp72w" name="jdbc:sqlserver://LAP-00279\SQLEXPRESS:1433;databaseName=fsarTestDB" content="jdbc:sqlserver://LAP-00279\SQLEXPRESS:1433;databaseName=fsarTestDB" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rkv-Ns8rEemDzeAQtbp72w" key="script">
-                <expression xmi:type="expression:Expression" xmi:id="_rkv-N88rEemDzeAQtbp72w" name="script()" content="String mySQLRequest = &quot;SELECT [stock]&quot;&#xD;&#xA;mySQLRequest += &quot; FROM [fsarTestDB].[dbo].[itemsAvalaible]&quot;;&#xD;&#xA;mySQLRequest += &quot; WHERE [itemRef] like '&quot;+itemChangeRequest.newItemId+&quot;'&quot;;&#xD;&#xA;return mySQLRequest;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_njmykNLREemAjNXA0wRbVg" name="itemChangeRequest" dataType="_xuKhlM8IEemAgNsKV_wbPw" className="com.company.model.itemChangeRequestv2"/>
-                </expression>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rkv-OM8rEemDzeAQtbp72w" key="username">
-                <expression xmi:type="expression:Expression" xmi:id="_rkv-Oc8rEemDzeAQtbp72w" name="ocssql" content="ocssql" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rkv-Os8rEemDzeAQtbp72w" key="password">
-                <expression xmi:type="expression:Expression" xmi:id="_rkv-O88rEemDzeAQtbp72w" name="ocssql" content="ocssql" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rkv-PM8rEemDzeAQtbp72w" key="separator">
-                <expression xmi:type="expression:Expression" xmi:id="_rkv-Pc8rEemDzeAQtbp72w" content="" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rkv-Ps8rEemDzeAQtbp72w" key="outputType">
-                <expression xmi:type="expression:Expression" xmi:id="_rkv-P88rEemDzeAQtbp72w" name="outputType" returnTypeFixed="true"/>
-              </parameters>
-            </configuration>
-            <outputs xmi:type="expression:Operation" xmi:id="_VGH-IM-xEemGzZ4QJjrAcw">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_VGH-Ic-xEemGzZ4QJjrAcw" name="stockValue" content="stockValue" type="TYPE_VARIABLE">
-                <referencedElements xmi:type="process:Data" xmi:id="_VGH-Is-xEemGzZ4QJjrAcw" name="stockValue" dataType="_xuKhkc8IEemAgNsKV_wbPw"/>
-              </leftOperand>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_VGH-I8-xEemGzZ4QJjrAcw" name="newScript()" content="String mySQLResult;&#xD;&#xA;if (resultset != null){&#xD;&#xA;&#x9;while(resultset.next()) {&#xD;&#xA;&#x9;mySQLResult= resultset.getString(&quot;stock&quot;);&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;else{&#xD;&#xA;&#x9;mySQLResult=&quot;NonExistant&quot;;&#xD;&#xA;&#x9;}&#xD;&#xA;return mySQLResult;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="definition:Output" xmi:id="_7UZWkM_eEemGzZ4QJjrAcw" name="resultset" type="java.sql.ResultSet"/>
-              </rightOperand>
-              <operator xmi:type="expression:Operator" xmi:id="_VGH-Jc-xEemGzZ4QJjrAcw" type="ASSIGNMENT" expression="setStockStatus">
-                <inputTypes>java.lang.String</inputTypes>
-              </operator>
-            </outputs>
-          </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_qzXUkM_bEemGzZ4QJjrAcw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_qzXUkc_bEemGzZ4QJjrAcw" name="itemChangeRequest" content="itemChangeRequest" type="TYPE_VARIABLE" returnType="com.company.model.itemChangeRequestv2">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1YKwEM_bEemGzZ4QJjrAcw" name="itemChangeRequest" dataType="_xuKhlM8IEemAgNsKV_wbPw" className="com.company.model.itemChangeRequestv2"/>
@@ -451,46 +413,10 @@
         </defaultValue>
       </data>
       <data xmi:type="process:JavaObjectData" xmi:id="_-EiKcM-zEemGzZ4QJjrAcw" name="listOfItemRef" dataType="_xuKhks8IEemAgNsKV_wbPw" className="java.util.List">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_-EiKcc-zEemGzZ4QJjrAcw" content="" returnType="java.util.List"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_-EiKcc-zEemGzZ4QJjrAcw" name="init_listOfItemRef()" content="List myItems = new ArrayList();&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH01\&quot;}&quot;);&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH02\&quot;}&quot;);&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH03\&quot;}&quot;);&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH04\&quot;}&quot;);&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH05\&quot;}&quot;);&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH06\&quot;}&quot;);&#xD;&#xA;return myItems;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List"/>
       </data>
-      <connectors xmi:type="process:Connector" xmi:id="_7qkM8M-0EemGzZ4QJjrAcw" name="getItemRefs" definitionId="database-mssqlserver" event="ON_ENTER" definitionVersion="1.2.1">
-        <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_7qkM8c-0EemGzZ4QJjrAcw" definitionId="database-mssqlserver" version="1.2.1" modelVersion="7.9.0-002">
-          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_7qkM8s-0EemGzZ4QJjrAcw" key="driver">
-            <expression xmi:type="expression:Expression" xmi:id="_7qkM88-0EemGzZ4QJjrAcw" name="com.microsoft.sqlserver.jdbc.SQLServerDriver" content="com.microsoft.sqlserver.jdbc.SQLServerDriver" returnTypeFixed="true"/>
-          </parameters>
-          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_7qkM9M-0EemGzZ4QJjrAcw" key="url">
-            <expression xmi:type="expression:Expression" xmi:id="_7qkM9c-0EemGzZ4QJjrAcw" name="jdbc:sqlserver://LAP-00279\SQLEXPRESS:1433;databaseName=fsarTestDB" content="jdbc:sqlserver://LAP-00279\SQLEXPRESS:1433;databaseName=fsarTestDB" returnTypeFixed="true"/>
-          </parameters>
-          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_7qkM9s-0EemGzZ4QJjrAcw" key="script">
-            <expression xmi:type="expression:Expression" xmi:id="_7qkM98-0EemGzZ4QJjrAcw" name="script()" content="String mySQLRequest = &quot;SELECT [itemRef]&quot;&#xD;&#xA;mySQLRequest += &quot; FROM [fsarTestDB].[dbo].[itemsAvalaible]&quot;;&#xD;&#xA;return mySQLRequest;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
-          </parameters>
-          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_7qkM-M-0EemGzZ4QJjrAcw" key="username">
-            <expression xmi:type="expression:Expression" xmi:id="_7qkM-c-0EemGzZ4QJjrAcw" name="ocssql" content="ocssql" returnTypeFixed="true"/>
-          </parameters>
-          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_7qkM-s-0EemGzZ4QJjrAcw" key="password">
-            <expression xmi:type="expression:Expression" xmi:id="_7qkM-8-0EemGzZ4QJjrAcw" name="ocssql" content="ocssql" returnTypeFixed="true"/>
-          </parameters>
-          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_7qkM_M-0EemGzZ4QJjrAcw" key="separator">
-            <expression xmi:type="expression:Expression" xmi:id="_7qkM_c-0EemGzZ4QJjrAcw" content="" returnTypeFixed="true"/>
-          </parameters>
-          <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_7qkM_s-0EemGzZ4QJjrAcw" key="outputType">
-            <expression xmi:type="expression:Expression" xmi:id="_7qkM_8-0EemGzZ4QJjrAcw" name="outputType" returnTypeFixed="true"/>
-          </parameters>
-        </configuration>
-        <outputs xmi:type="expression:Operation" xmi:id="_7qkNAM-0EemGzZ4QJjrAcw">
-          <leftOperand xmi:type="expression:Expression" xmi:id="_7qkNAc-0EemGzZ4QJjrAcw" name="listOfItemRef" content="listOfItemRef" type="TYPE_VARIABLE" returnType="java.util.List">
-            <referencedElements xmi:type="process:JavaObjectData" xmi:id="_jC0-8NB0EemXtImiveyNfA" name="listOfItemRef" dataType="_xuKhks8IEemAgNsKV_wbPw" className="java.util.List"/>
-          </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="_7qkNA8-0EemGzZ4QJjrAcw" name="resultset" content="List myItems = new ArrayList();&#xD;&#xA;while(resultset.next()) {&#xD;&#xA;&#x9;myItems.add(&quot;{\&quot;label\&quot;: \&quot;&quot;+ resultset.getString(&quot;itemRef&quot;) + &quot;\&quot;}&quot;);&#xD;&#xA;}&#xD;&#xA;return myItems;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-            <referencedElements xmi:type="definition:Output" xmi:id="_k4XRkM_iEemGzZ4QJjrAcw" name="resultset" type="java.sql.ResultSet"/>
-          </rightOperand>
-          <operator xmi:type="expression:Operator" xmi:id="_7qkNBc-0EemGzZ4QJjrAcw" type="ASSIGNMENT" expression="setItems">
-            <inputTypes>java.lang.String</inputTypes>
-          </operator>
-        </outputs>
-      </connectors>
       <formMapping xmi:type="process:FormMapping" xmi:id="_xuKhdM8IEemAgNsKV_wbPw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_Cm3CcN-UEem5dMTEQkMfSw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_oJOUcONhEemzKNcINpRqfw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_xuKhds8IEemAgNsKV_wbPw" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_xuKhd88IEemAgNsKV_wbPw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -914,7 +840,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_gOaxAdO-EemAjNXA0wRbVg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_Pkm8n9OyEemAjNXA0wRbVg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_CsRt8N-UEem5dMTEQkMfSw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_oZEuUONhEemzKNcINpRqfw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_Pkm8odOyEemAjNXA0wRbVg">
         <targetForm xmi:type="expression:Expression" xmi:id="_Pkm8otOyEemAjNXA0wRbVg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

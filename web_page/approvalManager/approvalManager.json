@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "approvalManager",
   "name" : "approvalManager",
-  "lastUpdate" : 1569413750487,
+  "lastUpdate" : 1569834045428,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -449,7 +449,7 @@
     },
     "formValidate" : {
       "type" : "expression",
-      "value" : "return {\"status\" : \"feasibilityToDo\"};",
+      "value" : "return {\"status\" : \"Pending Feasibility Analysis\"};",
       "exposed" : false
     },
     "formRefuse" : {
