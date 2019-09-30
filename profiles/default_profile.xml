@@ -41,24 +41,24 @@
         <description>This is a default profile. Name and description will be translated in Bonita Portal. Do not edit the name or the description.</description>
         <profileEntries/>
         <profileMapping>
-            <users/>
+            <users>
+                <user>ludo.daclun</user>
+            </users>
             <groups/>
             <memberships/>
-            <roles>
-                <role>member</role>
-            </roles>
+            <roles/>
         </profileMapping>
     </profile>
     <profile name="Process manager" isDefault="true">
         <description>This is a default profile. Name and description will be translated in Bonita Portal. Do not edit the name or the description.</description>
         <profileEntries/>
         <profileMapping>
-            <users/>
+            <users>
+                <user>damien.dub</user>
+            </users>
             <groups/>
             <memberships/>
-            <roles>
-                <role>member</role>
-            </roles>
+            <roles/>
         </profileMapping>
     </profile>
 </profiles:profiles>
