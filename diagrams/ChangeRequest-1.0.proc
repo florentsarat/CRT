@@ -415,8 +415,8 @@
       <data xmi:type="process:JavaObjectData" xmi:id="_-EiKcM-zEemGzZ4QJjrAcw" name="listOfItemRef" dataType="_xuKhks8IEemAgNsKV_wbPw" className="java.util.List">
         <defaultValue xmi:type="expression:Expression" xmi:id="_-EiKcc-zEemGzZ4QJjrAcw" name="init_listOfItemRef()" content="List myItems = new ArrayList();&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH01\&quot;}&quot;);&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH02\&quot;}&quot;);&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH03\&quot;}&quot;);&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH04\&quot;}&quot;);&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH05\&quot;}&quot;);&#xD;&#xA;myItems.add(&quot;{\&quot;label\&quot;:\&quot;CH06\&quot;}&quot;);&#xD;&#xA;return myItems;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List"/>
       </data>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_xuKhdM8IEemAgNsKV_wbPw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_oJOUcONhEemzKNcINpRqfw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_xuKhdM8IEemAgNsKV_wbPw" type="NONE">
+        <targetForm xmi:type="expression:Expression" xmi:id="_qGXCoON5EemWL715fOxBZQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_xuKhds8IEemAgNsKV_wbPw" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_xuKhd88IEemAgNsKV_wbPw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -840,7 +840,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_gOaxAdO-EemAjNXA0wRbVg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_Pkm8n9OyEemAjNXA0wRbVg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_oZEuUONhEemzKNcINpRqfw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_qRulION5EemWL715fOxBZQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_Pkm8odOyEemAjNXA0wRbVg">
         <targetForm xmi:type="expression:Expression" xmi:id="_Pkm8otOyEemAjNXA0wRbVg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
