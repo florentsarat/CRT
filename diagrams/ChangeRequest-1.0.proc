@@ -31,7 +31,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_xuKhbs8IEemAgNsKV_wbPw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_xuKhb88IEemAgNsKV_wbPw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_xuKhcM8IEemAgNsKV_wbPw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_YCaqAM8KEemAgNsKV_wbPw" name="approveFormButtons" content="c6f8e048-4a2f-4651-bcba-938f29801d1a" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_YCaqAM8KEemAgNsKV_wbPw" name="approvalManager" content="c6f8e048-4a2f-4651-bcba-938f29801d1a" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_OLJeENB3EemeM-xP02bjmw" name="manageronly" definitionId="initiator-manager" definitionVersion="1.0.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_OLJeEdB3EemeM-xP02bjmw" definitionId="initiator-manager" version="1.0.0">
@@ -490,7 +490,7 @@
         </outputs>
       </connectors>
       <formMapping xmi:type="process:FormMapping" xmi:id="_xuKhdM8IEemAgNsKV_wbPw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_thCaQNYGEemmWPQKDyExow" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_Cm3CcN-UEem5dMTEQkMfSw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_xuKhds8IEemAgNsKV_wbPw" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_xuKhd88IEemAgNsKV_wbPw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -914,7 +914,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_gOaxAdO-EemAjNXA0wRbVg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_Pkm8n9OyEemAjNXA0wRbVg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_tynScNYGEemmWPQKDyExow" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_CsRt8N-UEem5dMTEQkMfSw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_Pkm8odOyEemAjNXA0wRbVg">
         <targetForm xmi:type="expression:Expression" xmi:id="_Pkm8otOyEemAjNXA0wRbVg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

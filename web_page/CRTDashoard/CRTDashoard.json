@@ -2,49 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "CRTDashoard",
   "name" : "CRTDashoard",
-<<<<<<< HEAD
-  "lastUpdate" : 1568642042759,
-  "rows" : [ [ {
-    "type" : "container",
-    "dimension" : {
-      "xs" : 12
-    },
-    "propertyValues" : {
-      "cssClasses" : {
-        "type" : "constant",
-        "value" : ""
-      },
-      "hidden" : {
-        "type" : "constant",
-        "value" : false
-      },
-      "repeatedCollection" : {
-        "type" : "variable",
-        "value" : ""
-      }
-    },
-    "reference" : "b15e71d3-ac7f-4377-91a4-95b1281fbc7f",
-    "hasValidationError" : false,
-    "id" : "pbContainer",
-    "rows" : [ [ {
-      "type" : "component",
-      "dimension" : {
-        "xs" : 12
-      },
-      "propertyValues" : {
-        "cssClasses" : {
-          "type" : "constant",
-          "value" : ""
-        },
-        "hidden" : {
-          "type" : "constant",
-          "value" : false
-        },
-        "text" : {
-          "type" : "interpolation",
-          "value" : "Change Request Tool test GIT"
-=======
-  "lastUpdate" : 1568299920343,
+  "lastUpdate" : 1569413633773,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -84,7 +42,6 @@
         "text" : {
           "type" : "interpolation",
           "value" : "Change Request Tool test"
->>>>>>> branch 'master' of https://github.com/florentsarat/CRT
         },
         "level" : {
           "type" : "constant",

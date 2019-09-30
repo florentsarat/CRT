@@ -4,12 +4,37 @@
         <description>This is a default profile. Name and description will be translated in Bonita Portal. Do not edit the name or the description.</description>
         <profileEntries/>
         <profileMapping>
-            <users/>
-            <groups/>
+            <users>
+                <user>alain.suis</user>
+                <user>bora.bakol</user>
+                <user>chris.perdido</user>
+                <user>damien.dub</user>
+                <user>edouard.richarte</user>
+                <user>eric.ketchup</user>
+                <user>hanh.ping</user>
+                <user>heather.reglis</user>
+                <user>jerome.cluzaux</user>
+                <user>jimmy.chin</user>
+                <user>jimmy.liu</user>
+                <user>lance.witkowsky</user>
+                <user>ludo.daclun</user>
+                <user>ludovic.gauthier</user>
+                <user>marc.pion</user>
+                <user>michelle.deivart</user>
+                <user>mike.duplass</user>
+                <user>raj.chopra</user>
+                <user>rob.traven</user>
+                <user>suzie.macdonnel</user>
+            </users>
+            <groups>
+                <group>/Preprod</group>
+                <group>/Prod</group>
+                <group>/Support</group>
+                <group>/Management</group>
+                <group>/Customer Service</group>
+            </groups>
             <memberships/>
-            <roles>
-                <role>member</role>
-            </roles>
+            <roles/>
         </profileMapping>
     </profile>
     <profile name="Administrator" isDefault="true">
