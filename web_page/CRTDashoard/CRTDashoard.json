@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "CRTDashoard",
   "name" : "CRTDashoard",
-  "lastUpdate" : 1572304076712,
+  "lastUpdate" : 1572305648320,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -41,7 +41,7 @@
         },
         "text" : {
           "type" : "interpolation",
-          "value" : "Change Request Tool Beta"
+          "value" : "Change Request Tool"
         },
         "level" : {
           "type" : "constant",
