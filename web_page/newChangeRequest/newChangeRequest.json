@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "newChangeRequest",
   "name" : "newChangeRequest",
-  "lastUpdate" : 1572302837308,
+  "lastUpdate" : 1572303256553,
   "rows" : [ [ {
     "type" : "formContainer",
     "dimension" : {
@@ -756,7 +756,7 @@
           },
           "targetUrlOnSuccess" : {
             "type" : "interpolation",
-            "value" : "/apps/CRT/Dashboard/"
+            "value" : ""
           },
           "action" : {
             "type" : "constant",
