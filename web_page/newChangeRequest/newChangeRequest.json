@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "newChangeRequest",
   "name" : "newChangeRequest",
-  "lastUpdate" : 1569413723017,
+  "lastUpdate" : 1572302837308,
   "rows" : [ [ {
     "type" : "formContainer",
     "dimension" : {
@@ -756,7 +756,7 @@
           },
           "targetUrlOnSuccess" : {
             "type" : "interpolation",
-            "value" : "/bonita"
+            "value" : "/apps/CRT/Dashboard/"
           },
           "action" : {
             "type" : "constant",
@@ -783,6 +783,29 @@
           "dimension" : {
             "type" : "constant",
             "value" : 12
+          },
+          "assign" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "url" : {
+            "type" : "interpolation"
+          },
+          "responseStatusCode" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "dataFromSuccess" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "closeOnSuccess" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : ""
           }
         },
         "reference" : "56678c6c-889d-4aff-ae70-cb84174bf171",
