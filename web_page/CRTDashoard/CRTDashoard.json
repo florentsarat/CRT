@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "CRTDashoard",
   "name" : "CRTDashoard",
-  "lastUpdate" : 1571927968845,
+  "lastUpdate" : 1572301355536,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -187,7 +187,7 @@
         },
         "bonitaWebAppName" : {
           "type" : "constant",
-          "value" : "bonita"
+          "value" : ""
         }
       },
       "reference" : "24b72749-adc7-4511-9ca6-a4dafaee8ff2",
