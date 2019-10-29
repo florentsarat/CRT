@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "refineReqForm",
   "name" : "refineReqForm",
-  "lastUpdate" : 1569413766199,
+  "lastUpdate" : 1572354879722,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -650,6 +650,62 @@
           "reference" : "747d5baf-7a7d-48e3-bbd7-916e7bb0fd46",
           "hasValidationError" : false,
           "id" : "pbInput"
+        } ], [ {
+          "type" : "component",
+          "dimension" : {
+            "xs" : 12,
+            "sm" : 12,
+            "md" : 12,
+            "lg" : 12
+          },
+          "propertyValues" : {
+            "cssClasses" : {
+              "type" : "constant",
+              "value" : ""
+            },
+            "hidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "required" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "labelHidden" : {
+              "type" : "constant",
+              "value" : false
+            },
+            "label" : {
+              "type" : "interpolation",
+              "value" : "FileToUpload"
+            },
+            "labelPosition" : {
+              "type" : "constant",
+              "value" : "top"
+            },
+            "labelWidth" : {
+              "type" : "constant",
+              "value" : 4
+            },
+            "placeholder" : {
+              "type" : "interpolation"
+            },
+            "url" : {
+              "type" : "constant",
+              "value" : "../API/formFileUpload"
+            },
+            "value" : {
+              "type" : "variable",
+              "value" : "MyDoc.MyDoc"
+            },
+            "errorContent" : {
+              "type" : "variable",
+              "value" : ""
+            }
+          },
+          "reference" : "3f2bc6c3-7a3f-43ae-b530-408d60333f48",
+          "hasValidationError" : false,
+          "id" : "pbUpload"
         } ] ]
       } ], [ {
         "type" : "component",
@@ -833,7 +889,7 @@
     },
     "formOutput" : {
       "type" : "expression",
-      "value" : "if( $data.itemChangeRequest ){\n\treturn {\n\t\t//map itemChangeRequest variable to expected task contract input\n\t\titemChangeRequestInput: {\n\t\t\tcustomerRequesting: $data.itemChangeRequest.customerRequesting !== undefined ? $data.itemChangeRequest.customerRequesting : null,\n\t\t\toldItemId: $data.itemChangeRequest.oldItemId !== undefined ? $data.itemChangeRequest.oldItemId : null,\n\t\t\tnewItemId: $data.itemChangeRequest.newItemId !== undefined ? $data.itemChangeRequest.newItemId : null,\n\t\t\ttargetDeliveryDate: $data.itemChangeRequest.targetDeliveryDate !== undefined ? $data.itemChangeRequest.targetDeliveryDate : null,\n\t\t\tpriority: $data.itemChangeRequest.priority !== undefined ? $data.itemChangeRequest.priority : null,\n\t\t\tcustomerJustification: $data.itemChangeRequest.customerJustification !== undefined ? $data.itemChangeRequest.customerJustification : null\n\t\t}\n\t}\n}",
+      "value" : "if( $data.itemChangeRequest ){\n\treturn {\n\t\t//map itemChangeRequest variable to expected task contract input\n\t\titemChangeRequestInput: {\n\t\t\tcustomerRequesting: $data.itemChangeRequest.customerRequesting !== undefined ? $data.itemChangeRequest.customerRequesting : null,\n\t\t\toldItemId: $data.itemChangeRequest.oldItemId !== undefined ? $data.itemChangeRequest.oldItemId : null,\n\t\t\tnewItemId: $data.itemChangeRequest.newItemId !== undefined ? $data.itemChangeRequest.newItemId : null,\n\t\t\ttargetDeliveryDate: $data.itemChangeRequest.targetDeliveryDate !== undefined ? $data.itemChangeRequest.targetDeliveryDate : null,\n\t\t\tpriority: $data.itemChangeRequest.priority !== undefined ? $data.itemChangeRequest.priority : null,\n\t\t\tcustomerJustification: $data.itemChangeRequest.customerJustification !== undefined ? $data.itemChangeRequest.customerJustification : null\n\t\t},\n\t\t'testDocFile':$data.MyDoc.MyDoc\n\t}\n}",
       "exposed" : false
     },
     "context" : {
@@ -869,6 +925,11 @@
     "listOfCustomers" : {
       "type" : "json",
       "value" : "[\n    {\"label\": \"Wells Fargo\", \"value\": \"wells\"},\n    {\"label\": \"Capital One\", \"value\": \"cap1\"},\n    {\"label\": \"BNP Paribas\", \"value\": \"bnp\"},\n    {\"label\": \"Santander Bank\", \"value\": \"santander\"}\n]",
+      "exposed" : false
+    },
+    "MyDoc" : {
+      "type" : "json",
+      "value" : "{\n \"MyDoc\" : { }\n}\n",
       "exposed" : false
     }
   },

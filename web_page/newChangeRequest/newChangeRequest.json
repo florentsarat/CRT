@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "newChangeRequest",
   "name" : "newChangeRequest",
-  "lastUpdate" : 1572303256553,
+  "lastUpdate" : 1572355109966,
   "rows" : [ [ {
     "type" : "formContainer",
     "dimension" : {
@@ -681,7 +681,7 @@
             },
             "value" : {
               "type" : "variable",
-              "value" : "formInput.itemChangeRequestInput.customerJustification"
+              "value" : ""
             },
             "minLength" : {
               "type" : "constant",
@@ -919,6 +919,11 @@
     "listOfPossibleItems" : {
       "type" : "expression",
       "value" : "return \t{request.items};",
+      "exposed" : false
+    },
+    "MyDoc" : {
+      "type" : "json",
+      "value" : "{\n \"MyDoc\" : { }\n}",
       "exposed" : false
     }
   },

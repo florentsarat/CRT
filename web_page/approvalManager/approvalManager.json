@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "approvalManager",
   "name" : "approvalManager",
-  "lastUpdate" : 1569834045428,
+  "lastUpdate" : 1572358464095,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -126,6 +126,72 @@
       "reference" : "c15ed7ff-426a-4c4d-adfa-d1fa5347d876",
       "hasValidationError" : false,
       "id" : "pbText"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "Download document"
+        },
+        "type" : {
+          "type" : "constant",
+          "value" : "URL"
+        },
+        "targetUrl" : {
+          "type" : "constant",
+          "value" : "attachment"
+        },
+        "pageToken" : {
+          "type" : "constant"
+        },
+        "processName" : {
+          "type" : "constant"
+        },
+        "processVersion" : {
+          "type" : "constant"
+        },
+        "taskId" : {
+          "type" : "constant"
+        },
+        "caseId" : {
+          "type" : "constant"
+        },
+        "target" : {
+          "type" : "constant",
+          "value" : "_self"
+        },
+        "appToken" : {
+          "type" : "constant"
+        },
+        "urlParams" : {
+          "type" : "constant"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "buttonStyle" : {
+          "type" : "constant",
+          "value" : "link"
+        }
+      },
+      "reference" : "fcbae074-bb77-4628-85c7-8098ddf90c47",
+      "hasValidationError" : false,
+      "id" : "pbLink"
     } ] ]
   } ], [ {
     "type" : "formContainer",
@@ -155,6 +221,43 @@
       "hasValidationError" : false,
       "id" : "pbContainer",
       "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Process document"
+          },
+          "url" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "document" : {
+            "type" : "variable",
+            "value" : "context.documentOutPDF"
+          },
+          "showPreview" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "69c32d47-82b7-4e51-bf3e-ef9076045e23",
+        "hasValidationError" : false,
+        "id" : "pbFileViewer"
+      } ], [ {
         "type" : "component",
         "dimension" : {
           "xs" : 6
@@ -470,6 +573,11 @@
     "AnotherTest" : {
       "type" : "expression",
       "value" : "var slicedString = $data.processVariableValue.value.slice( 1 );\nslicedString = slicedString.slice(0, -1);\nvar splitString = slicedString.split(\",\");\nreturn splitString;",
+      "exposed" : false
+    },
+    "attachment" : {
+      "type" : "expression",
+      "value" : "return \"/bonita/portal/\" + $data.context.documentOutPDF.url;",
       "exposed" : false
     }
   },
