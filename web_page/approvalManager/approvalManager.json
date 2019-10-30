@@ -2,13 +2,26 @@
   "designerVersion" : "1.9.53",
   "id" : "approvalManager",
   "name" : "approvalManager",
-  "lastUpdate" : 1572358464095,
+  "lastUpdate" : 1572446068100,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
       "xs" : 12
     },
-    "propertyValues" : { },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
     "reference" : "66f39ee7-626c-49b9-bf20-024a3160d9a7",
     "hasValidationError" : false,
     "id" : "pbContainer",
@@ -126,72 +139,6 @@
       "reference" : "c15ed7ff-426a-4c4d-adfa-d1fa5347d876",
       "hasValidationError" : false,
       "id" : "pbText"
-    } ], [ {
-      "type" : "component",
-      "dimension" : {
-        "xs" : 12,
-        "sm" : 12,
-        "md" : 12,
-        "lg" : 12
-      },
-      "propertyValues" : {
-        "cssClasses" : {
-          "type" : "constant",
-          "value" : ""
-        },
-        "hidden" : {
-          "type" : "constant",
-          "value" : false
-        },
-        "text" : {
-          "type" : "interpolation",
-          "value" : "Download document"
-        },
-        "type" : {
-          "type" : "constant",
-          "value" : "URL"
-        },
-        "targetUrl" : {
-          "type" : "constant",
-          "value" : "attachment"
-        },
-        "pageToken" : {
-          "type" : "constant"
-        },
-        "processName" : {
-          "type" : "constant"
-        },
-        "processVersion" : {
-          "type" : "constant"
-        },
-        "taskId" : {
-          "type" : "constant"
-        },
-        "caseId" : {
-          "type" : "constant"
-        },
-        "target" : {
-          "type" : "constant",
-          "value" : "_self"
-        },
-        "appToken" : {
-          "type" : "constant"
-        },
-        "urlParams" : {
-          "type" : "constant"
-        },
-        "alignment" : {
-          "type" : "constant",
-          "value" : "left"
-        },
-        "buttonStyle" : {
-          "type" : "constant",
-          "value" : "link"
-        }
-      },
-      "reference" : "fcbae074-bb77-4628-85c7-8098ddf90c47",
-      "hasValidationError" : false,
-      "id" : "pbLink"
     } ] ]
   } ], [ {
     "type" : "formContainer",
@@ -225,8 +172,8 @@
         "dimension" : {
           "xs" : 12,
           "sm" : 12,
-          "md" : 12,
-          "lg" : 12
+          "md" : 4,
+          "lg" : 4
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -247,7 +194,81 @@
           },
           "document" : {
             "type" : "variable",
-            "value" : "context.documentOutPDF"
+            "value" : "context.documentInWord_ref"
+          },
+          "showPreview" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "f61ed470-7cfd-4069-850e-7be2e8a2296a",
+        "hasValidationError" : false,
+        "id" : "pbFileViewer"
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Process document"
+          },
+          "url" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "document" : {
+            "type" : "variable",
+            "value" : "context.documentWordChanged_ref"
+          },
+          "showPreview" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "ee4ddb51-6ca9-417b-bee6-be1a774afaf0",
+        "hasValidationError" : false,
+        "id" : "pbFileViewer"
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Process document"
+          },
+          "url" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "document" : {
+            "type" : "variable",
+            "value" : "context.documentOutPDF_ref"
           },
           "showPreview" : {
             "type" : "constant",
@@ -577,7 +598,12 @@
     },
     "attachment" : {
       "type" : "expression",
-      "value" : "return \"/bonita/portal/\" + $data.context.documentOutPDF.url;",
+      "value" : "return \"/bonita/portal/\" + $data.context.documentInWord_ref.url;",
+      "exposed" : false
+    },
+    "attachment2" : {
+      "type" : "expression",
+      "value" : "return \"/bonita/portal/\" + $data.context.documentWordChanged_ref.url;",
       "exposed" : false
     }
   },
