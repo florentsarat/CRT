@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "CRTDashoard",
   "name" : "CRTDashoard",
-  "lastUpdate" : 1572965070715,
+  "lastUpdate" : 1573054464737,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -499,7 +499,7 @@
     },
     "getProcessURL" : {
       "type" : "expression",
-      "value" : "var process = $data.processDef[0];\nreturn \"/bonita/API/bpm/process/\" + process.id + \"/instantiation\";",
+      "value" : "var process = $data.processDef[0];\nreturn \"/API/bpm/process/\" + process.id + \"/instantiation\";",
       "exposed" : false
     },
     "successfulResponse" : {
