@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "approvalManager",
   "name" : "approvalManager",
-  "lastUpdate" : 1572446068100,
+  "lastUpdate" : 1573053946126,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -172,8 +172,8 @@
         "dimension" : {
           "xs" : 12,
           "sm" : 12,
-          "md" : 4,
-          "lg" : 4
+          "md" : 3,
+          "lg" : 3
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -209,8 +209,8 @@
         "dimension" : {
           "xs" : 12,
           "sm" : 12,
-          "md" : 4,
-          "lg" : 4
+          "md" : 3,
+          "lg" : 3
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -246,8 +246,8 @@
         "dimension" : {
           "xs" : 12,
           "sm" : 12,
-          "md" : 4,
-          "lg" : 4
+          "md" : 3,
+          "lg" : 3
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -276,6 +276,43 @@
           }
         },
         "reference" : "69c32d47-82b7-4e51-bf3e-ef9076045e23",
+        "hasValidationError" : false,
+        "id" : "pbFileViewer"
+      }, {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 3,
+          "lg" : 3
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Process document"
+          },
+          "url" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "document" : {
+            "type" : "variable",
+            "value" : "context.docToDownload_ref"
+          },
+          "showPreview" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "d7fc6b4f-62e4-4fb2-8d68-7c744cf0f524",
         "hasValidationError" : false,
         "id" : "pbFileViewer"
       } ], [ {

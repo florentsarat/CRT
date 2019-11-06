@@ -12,6 +12,49 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_xuKhaM8IEemAgNsKV_wbPw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_xuKhac8IEemAgNsKV_wbPw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_xuKhas8IEemAgNsKV_wbPw" name="" content="" returnTypeFixed="true"/>
+          <connectors xmi:type="process:Connector" xmi:id="_jLDuIACpEeqOHN09c0eGLQ" name="DownloadFileTest" definitionId="cmis-downloaddocument" event="ON_ENTER" definitionVersion="2.0.1">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_jLDuIQCpEeqOHN09c0eGLQ" definitionId="cmis-downloaddocument" version="2.0.1" modelVersion="7.9.0-002">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_jLDuIgCpEeqOHN09c0eGLQ" key="username">
+                <expression xmi:type="expression:Expression" xmi:id="_jLDuIwCpEeqOHN09c0eGLQ" name="admin" content="admin" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_jLDuJACpEeqOHN09c0eGLQ" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_jLDuJQCpEeqOHN09c0eGLQ" name="admin" content="admin" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_jLDuJgCpEeqOHN09c0eGLQ" key="url">
+                <expression xmi:type="expression:Expression" xmi:id="_jLDuJwCpEeqOHN09c0eGLQ" name="http://ec2-63-34-22-187.eu-west-1.compute.amazonaws.com:8080/alfresco/api/-default-/public/cmis/versions/1.1/atom" content="http://ec2-63-34-22-187.eu-west-1.compute.amazonaws.com:8080/alfresco/api/-default-/public/cmis/versions/1.1/atom" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_jLDuKACpEeqOHN09c0eGLQ" key="repository">
+                <expression xmi:type="expression:Expression" xmi:id="_jLDuKQCpEeqOHN09c0eGLQ" name="Main Repository" content="Main Repository" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_jLDuKgCpEeqOHN09c0eGLQ" key="binding_type">
+                <expression xmi:type="expression:Expression" xmi:id="_jLDuKwCpEeqOHN09c0eGLQ" name="atompub" content="atompub" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_jLDuLACpEeqOHN09c0eGLQ" key="remote_document_path">
+                <expression xmi:type="expression:Expression" xmi:id="_jLDuLQCpEeqOHN09c0eGLQ" name="/My Company/subfolder/document.txt" content="/My Company/subfolder/document.txt" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_jLDuLgCpEeqOHN09c0eGLQ" key="wsObjectServiceUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_jLDuLwCpEeqOHN09c0eGLQ" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_jLDuMACpEeqOHN09c0eGLQ" key="wsObjectServiceEndpointUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_jLDuMQCpEeqOHN09c0eGLQ" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_jLDuMgCpEeqOHN09c0eGLQ" key="wsRepositoryServiceUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_jLDuMwCpEeqOHN09c0eGLQ" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_jLDuNACpEeqOHN09c0eGLQ" key="wsRepositoryServiceEndpointUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_jLDuNQCpEeqOHN09c0eGLQ" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+            </configuration>
+            <outputs xmi:type="expression:Operation" xmi:id="_jLDuNgCpEeqOHN09c0eGLQ">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_jLDuNwCpEeqOHN09c0eGLQ" name="docToDownload" content="docToDownload" type="DOCUMENT_REF_TYPE">
+                <referencedElements xmi:type="process:Document" xmi:id="_jLDuOACpEeqOHN09c0eGLQ" name="docToDownload"/>
+              </leftOperand>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_jLDuOQCpEeqOHN09c0eGLQ" name="documentOutput" content="documentOutput" type="CONNECTOR_OUTPUT_TYPE" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
+                <referencedElements xmi:type="definition:Output" xmi:id="_jLDuOgCpEeqOHN09c0eGLQ" name="documentOutput" type="org.bonitasoft.engine.bpm.document.DocumentValue"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_jLDuOwCpEeqOHN09c0eGLQ" type="DOCUMENT_CREATE_UPDATE"/>
+            </outputs>
+          </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_zO0w8M8KEemAgNsKV_wbPw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_zO0w8c8KEemAgNsKV_wbPw" name="itemChangeRequest" content="itemChangeRequest" type="TYPE_VARIABLE" returnType="com.company.model.itemChangeRequestv2">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_z_lfgM8KEemAgNsKV_wbPw" name="itemChangeRequest" dataType="_xuKhlM8IEemAgNsKV_wbPw" className="com.company.model.itemChangeRequestv2"/>
@@ -119,6 +162,99 @@
                 <referencedElements xmi:type="definition:Output" xmi:id="_7fzI4PshEemAAMIkylzS1Q" name="document" type="org.bonitasoft.engine.bpm.document.DocumentValue"/>
               </rightOperand>
               <operator xmi:type="expression:Operator" xmi:id="_7fzI4fshEemAAMIkylzS1Q" type="DOCUMENT_CREATE_UPDATE"/>
+            </outputs>
+          </connectors>
+          <connectors xmi:type="process:Connector" xmi:id="_u_apsP-8EemWsLquvXG5Xw" name="TestFolderCMIS" definitionId="cmis-createfolder" event="ON_FINISH" definitionVersion="2.0.1">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_u_apsf-8EemWsLquvXG5Xw" definitionId="cmis-createfolder" version="2.0.1" modelVersion="7.9.0-002">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_u_apsv-8EemWsLquvXG5Xw" key="username">
+                <expression xmi:type="expression:Expression" xmi:id="_u_aps_-8EemWsLquvXG5Xw" name="admin" content="admin" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_u_aptP-8EemWsLquvXG5Xw" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_u_aptf-8EemWsLquvXG5Xw" name="admin" content="admin" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_u_aptv-8EemWsLquvXG5Xw" key="url">
+                <expression xmi:type="expression:Expression" xmi:id="_u_apt_-8EemWsLquvXG5Xw" name="http://ec2-63-34-22-187.eu-west-1.compute.amazonaws.com:8080/alfresco/api/-default-/public/cmis/versions/1.1/atom" content="http://ec2-63-34-22-187.eu-west-1.compute.amazonaws.com:8080/alfresco/api/-default-/public/cmis/versions/1.1/atom" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_u_apuP-8EemWsLquvXG5Xw" key="repository">
+                <expression xmi:type="expression:Expression" xmi:id="_u_apuf-8EemWsLquvXG5Xw" name="Main Repository" content="Main Repository" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_u_apuv-8EemWsLquvXG5Xw" key="binding_type">
+                <expression xmi:type="expression:Expression" xmi:id="_u_apu_-8EemWsLquvXG5Xw" name="atompub" content="atompub" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_u_apvP-8EemWsLquvXG5Xw" key="folder_path">
+                <expression xmi:type="expression:Expression" xmi:id="_u_apvf-8EemWsLquvXG5Xw" name="/" content="/" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_u_apvv-8EemWsLquvXG5Xw" key="subfolder_name">
+                <expression xmi:type="expression:Expression" xmi:id="_u_apv_-8EemWsLquvXG5Xw" name="subfolder_name()" content="def now = new Date()&#xD;&#xA;return now.format(&quot;yyyyMMdd-HH-MM&quot;, TimeZone.getTimeZone('UTC'))" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_u_apwP-8EemWsLquvXG5Xw" key="wsObjectServiceUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_u_apwf-8EemWsLquvXG5Xw" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_u_apwv-8EemWsLquvXG5Xw" key="wsObjectServiceEndpointUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_u_apw_-8EemWsLquvXG5Xw" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_u_apxP-8EemWsLquvXG5Xw" key="wsRepositoryServiceUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_u_apxf-8EemWsLquvXG5Xw" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_u_apxv-8EemWsLquvXG5Xw" key="wsRepositoryServiceEndpointUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_u_apx_-8EemWsLquvXG5Xw" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+            </configuration>
+            <outputs xmi:type="expression:Operation" xmi:id="_u_apyP-8EemWsLquvXG5Xw">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_u_apyf-8EemWsLquvXG5Xw" content=""/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_u_apyv-8EemWsLquvXG5Xw" name="folder_id" content="folder_id" type="CONNECTOR_OUTPUT_TYPE">
+                <referencedElements xmi:type="definition:Output" xmi:id="_u_apy_-8EemWsLquvXG5Xw" name="folder_id" type="java.lang.String"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_u_apzP-8EemWsLquvXG5Xw" type="ASSIGNMENT"/>
+            </outputs>
+          </connectors>
+          <connectors xmi:type="process:Connector" xmi:id="_3mM5UP-8EemWsLquvXG5Xw" name="UploadMyPDF" definitionId="cmis-uploadnewdocument" event="ON_FINISH" definitionVersion="2.0.1">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_3mM5Uf-8EemWsLquvXG5Xw" definitionId="cmis-uploadnewdocument" version="2.0.1" modelVersion="7.9.0-002">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5Uv-8EemWsLquvXG5Xw" key="username">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5U_-8EemWsLquvXG5Xw" name="admin" content="admin" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5VP-8EemWsLquvXG5Xw" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5Vf-8EemWsLquvXG5Xw" name="admin" content="admin" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5Vv-8EemWsLquvXG5Xw" key="url">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5V_-8EemWsLquvXG5Xw" name="http://ec2-63-34-22-187.eu-west-1.compute.amazonaws.com:8080/alfresco/api/-default-/public/cmis/versions/1.1/atom" content="http://ec2-63-34-22-187.eu-west-1.compute.amazonaws.com:8080/alfresco/api/-default-/public/cmis/versions/1.1/atom" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5WP-8EemWsLquvXG5Xw" key="repository">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5Wf-8EemWsLquvXG5Xw" name="Main Repository" content="Main Repository" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5Wv-8EemWsLquvXG5Xw" key="binding_type">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5W_-8EemWsLquvXG5Xw" name="atompub" content="atompub" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5XP-8EemWsLquvXG5Xw" key="wsObjectServiceUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5Xf-8EemWsLquvXG5Xw" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5Xv-8EemWsLquvXG5Xw" key="wsObjectServiceEndpointUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5X_-8EemWsLquvXG5Xw" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5YP-8EemWsLquvXG5Xw" key="wsRepositoryServiceUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5Yf-8EemWsLquvXG5Xw" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5Yv-8EemWsLquvXG5Xw" key="wsRepositoryServiceEndpointUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5Y_-8EemWsLquvXG5Xw" name="" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5ZP-8EemWsLquvXG5Xw" key="document">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5Zf-8EemWsLquvXG5Xw" name="documentOutPDF" content="documentOutPDF" type="DOCUMENT_REF_TYPE" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Document" xmi:id="_3mM5Zv-8EemWsLquvXG5Xw" name="documentOutPDF"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5Z_-8EemWsLquvXG5Xw" key="folder_path">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5aP-8EemWsLquvXG5Xw" name="/TestUpload" content="/TestUpload" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_3mM5af-8EemWsLquvXG5Xw" key="destinationName">
+                <expression xmi:type="expression:Expression" xmi:id="_3mM5av-8EemWsLquvXG5Xw" name="Test.pdf" content="Test.pdf" returnTypeFixed="true"/>
+              </parameters>
+            </configuration>
+            <outputs xmi:type="expression:Operation" xmi:id="_3mM5a_-8EemWsLquvXG5Xw">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_3mM5bP-8EemWsLquvXG5Xw" content=""/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_3mM5bf-8EemWsLquvXG5Xw" name="document_id" content="document_id" type="CONNECTOR_OUTPUT_TYPE">
+                <referencedElements xmi:type="definition:Output" xmi:id="_3mM5bv-8EemWsLquvXG5Xw" name="document_id" type="java.lang.String"/>
+              </rightOperand>
+              <operator xmi:type="expression:Operator" xmi:id="_3mM5b_-8EemWsLquvXG5Xw" type="ASSIGNMENT"/>
             </outputs>
           </connectors>
           <operations xmi:type="expression:Operation" xmi:id="_KFbFMNB_EemeM-xP02bjmw">
@@ -595,6 +731,9 @@
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_c-TqcuN9EemWL715fOxBZQ" type="CONNECTOR" definitionId="email" definitionVersion="1.0.0" implementationId="email-impl" implementationVersion="1.1.1"/>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_TIIbMPpVEemn4eUG8179mA" type="CONNECTOR" definitionId="document-converter" definitionVersion="1.0.2" implementationId="document-converter-impl" implementationVersion="1.0.2"/>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_IGm4UPsiEemAAMIkylzS1Q" type="CONNECTOR" definitionId="document-templating" definitionVersion="1.0.1" implementationId="document-templating-impl" implementationVersion="1.0.1"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_mHqS8P_JEemWsLquvXG5Xw" type="CONNECTOR" definitionId="cmis-createfolder" definitionVersion="2.0.1" implementationId="cmis-createfolder" implementationVersion="3.0.3"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_mIL3YP_JEemWsLquvXG5Xw" type="CONNECTOR" definitionId="cmis-uploadnewdocument" definitionVersion="2.0.1" implementationId="cmis-uploadnewdocument" implementationVersion="3.0.3"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="__xb4sACpEeqOHN09c0eGLQ" type="CONNECTOR" definitionId="cmis-downloaddocument" definitionVersion="2.0.1" implementationId="cmis-downloaddocument" implementationVersion="3.0.3"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c-Tqc-N9EemWL715fOxBZQ" id="ACTOR_FILTER"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c-TqduN9EemWL715fOxBZQ" id="CONNECTOR">
           <children xmi:type="configuration:FragmentContainer" xmi:id="_c-Tqd-N9EemWL715fOxBZQ" id="email-impl-1.1.1">
@@ -650,6 +789,75 @@
             <fragments xmi:type="configuration:Fragment" xmi:id="_IHIcwPsiEemAAMIkylzS1Q" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.core-1.0.5.jar" type="CONNECTOR"/>
             <fragments xmi:type="configuration:Fragment" xmi:id="_IHJD0PsiEemAAMIkylzS1Q" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.document.odt-1.0.5.jar" type="CONNECTOR"/>
           </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_mH9N4P_JEemWsLquvXG5Xw" id="cmis-createfolder-3.0.3">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIBfUP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="bonita-connector-cmis-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mICGYP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="cxf-rt-databinding-jaxb-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mICtcP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="chemistry-opencmis-client-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIDUgP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="cxf-rt-frontend-jaxws-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mID7kP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="cxf-rt-bindings-xml-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIEioP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="cxf-rt-transports-http-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIEiof_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="chemistry-opencmis-client-bindings-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIFJsP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="cxf-rt-wsdl-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIFwwP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="wsdl4j-1.6.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIFwwf_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="xmlschema-core-2.2.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIGX0P_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="cxf-rt-bindings-soap-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIGX0f_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="cxf-core-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIG-4P_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="asm-3.3.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIG-4f_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="neethi-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIHl8P_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="chemistry-opencmis-client-impl-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIINAP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="cxf-rt-ws-addr-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mII0EP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="chemistry-opencmis-commons-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mII0Ef_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="cxf-rt-ws-policy-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIJbIP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="xml-resolver-1.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIKCMP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="cxf-rt-frontend-simple-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIKpQP_JEemWsLquvXG5Xw" key="cmis-createfolder -- 3.0.3" value="chemistry-opencmis-commons-impl-1.1.0.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_mIZSwP_JEemWsLquvXG5Xw" id="cmis-uploadnewdocument-3.0.3">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIeyUP_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="bonita-connector-cmis-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIfZYP_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="cxf-rt-databinding-jaxb-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIfZYf_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="chemistry-opencmis-client-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIfZYv_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="cxf-rt-frontend-jaxws-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIgAcP_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="cxf-rt-bindings-xml-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIgngP_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="cxf-rt-transports-http-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIgngf_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="chemistry-opencmis-client-bindings-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIhOkP_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="cxf-rt-wsdl-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIjDwP_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="wsdl4j-1.6.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIjq0P_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="xmlschema-core-2.2.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIjq0f_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="cxf-rt-bindings-soap-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIkR4P_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="cxf-core-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIkR4f_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="asm-3.3.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIk48P_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="neethi-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIk48f_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="chemistry-opencmis-client-impl-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIlgAP_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="cxf-rt-ws-addr-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mIlgAf_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="chemistry-opencmis-commons-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mImHEP_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="cxf-rt-ws-policy-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mImHEf_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="xml-resolver-1.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mImuIP_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="cxf-rt-frontend-simple-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mInVMP_JEemWsLquvXG5Xw" key="cmis-uploadnewdocument -- 3.0.3" value="chemistry-opencmis-commons-impl-1.1.0.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="__0-78ACpEeqOHN09c0eGLQ" id="cmis-downloaddocument-3.0.3">
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1LwQACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="bonita-connector-cmis-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1MXUACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="cxf-rt-databinding-jaxb-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1M-YACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="chemistry-opencmis-client-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1NlcACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="cxf-rt-frontend-jaxws-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1OMgACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="cxf-rt-bindings-xml-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1OzkACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="cxf-rt-transports-http-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1PaoACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="chemistry-opencmis-client-bindings-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1PaoQCpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="cxf-rt-wsdl-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1QBsACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="wsdl4j-1.6.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1QowACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="xmlschema-core-2.2.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1RP0ACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="cxf-rt-bindings-soap-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1TFAACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="cxf-core-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1TsEACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="asm-3.3.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1UTIACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="neethi-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1UTIQCpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="chemistry-opencmis-client-impl-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1U6MACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="cxf-rt-ws-addr-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1VhQACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="chemistry-opencmis-commons-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1WIUACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="cxf-rt-ws-policy-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1WIUQCpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="xml-resolver-1.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1WvYACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="cxf-rt-frontend-simple-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="__1XWcACpEeqOHN09c0eGLQ" key="cmis-downloaddocument -- 3.0.3" value="chemistry-opencmis-commons-impl-1.1.0.jar" type="CONNECTOR"/>
+          </children>
         </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c-TqeuN9EemWL715fOxBZQ" id="DATA_TYPES"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c-Tqe-N9EemWL715fOxBZQ" id="GROOVY_SCRIPT"/>
@@ -673,6 +881,11 @@
         <mimeType xmi:type="expression:Expression" xmi:id="_zBJwQfsbEemKHeGU6IWkDA" name="" content="" returnTypeFixed="true"/>
         <url xmi:type="expression:Expression" xmi:id="_zBJwQvsbEemKHeGU6IWkDA" name="" content="" returnTypeFixed="true"/>
         <initialMultipleContent xmi:type="expression:Expression" xmi:id="_zBJwQ_sbEemKHeGU6IWkDA" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
+      </documents>
+      <documents xmi:type="process:Document" xmi:id="_BEEasACpEeqOHN09c0eGLQ" name="docToDownload">
+        <mimeType xmi:type="expression:Expression" xmi:id="_BEEasQCpEeqOHN09c0eGLQ" name="" content="" returnTypeFixed="true"/>
+        <url xmi:type="expression:Expression" xmi:id="_BEEasgCpEeqOHN09c0eGLQ" name="" content="" returnTypeFixed="true"/>
+        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_BEEaswCpEeqOHN09c0eGLQ" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
       </documents>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_xuKhfc8IEemAgNsKV_wbPw">
         <name xmi:type="expression:Expression" xmi:id="_xuKhfs8IEemAgNsKV_wbPw" content="" returnTypeFixed="true"/>

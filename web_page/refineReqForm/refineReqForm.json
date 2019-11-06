@@ -2,7 +2,7 @@
   "designerVersion" : "1.9.53",
   "id" : "refineReqForm",
   "name" : "refineReqForm",
-  "lastUpdate" : 1572446314189,
+  "lastUpdate" : 1572965085484,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -757,7 +757,7 @@
           },
           "targetUrlOnSuccess" : {
             "type" : "interpolation",
-            "value" : "/apps/CRT/Dashboard/"
+            "value" : "/bonita/apps/CRT/Dashboard/"
           },
           "action" : {
             "type" : "constant",
