@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" definitionId="cmis-deletedocument" version="2.0.1" name="Alfresco" modelVersion="7.10.0-001">
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="admin" content="admin" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="admin" content="admin" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="http://ec2-63-34-22-187.eu-west-1.compute.amazonaws.com:8080/alfresco/api/-default-/public/cmis/versions/1.1/atom" content="http://ec2-63-34-22-187.eu-west-1.compute.amazonaws.com:8080/alfresco/api/-default-/public/cmis/versions/1.1/atom" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="repository">
+    <expression xsi:type="expression:Expression" name="Main Repository" content="Main Repository" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="binding_type">
+    <expression xsi:type="expression:Expression" name="atompub" content="atompub" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsObjectServiceUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsObjectServiceEndpointUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsRepositoryServiceUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wsRepositoryServiceEndpointUrl">
+    <expression xsi:type="expression:Expression" name="" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="document_path">
+    <expression xsi:type="expression:Expression" name="/myDocument.txt" content="/myDocument.txt" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>
