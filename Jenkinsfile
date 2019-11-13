@@ -3,7 +3,7 @@ node {
 	def BUILD_PARAMETERS = [ 
 		bonitaEnvironment:'Qualification',
 		bcdConfiguration:'integration',
-		rumtime:'acme1-intg (7.10.0.beta-02)',
+		rumtime:'acme1-prd (7.10.0.beta-02)',
 		verbose:false
 	]
 
