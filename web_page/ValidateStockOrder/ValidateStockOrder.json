@@ -639,7 +639,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                    "value" : "<strong>Debug mess</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
                   },
                   "alignment" : {
                     "type" : "constant",
