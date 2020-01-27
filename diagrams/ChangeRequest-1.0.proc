@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xmlns:transitions="http://www.bonitasoft.org/ns/studio/process/decision/transitions" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision http://www.bonitasoft.org/ns/studio/process/decision/transitions http://www.bonitasoft.org/ns/studio/process#//decision/transitions">
-  <process:MainProcess xmi:id="_xuKhYM8IEemAgNsKV_wbPw" name="ChangeRequest" author="florent.sarat" bonitaVersion="7.10.0" bonitaModelVersion="7.10.0-001" configId="ACED000574001F4368616E676552657175657374372E31302E302D303031372E31302E307370">
+  <process:MainProcess xmi:id="_xuKhYM8IEemAgNsKV_wbPw" name="ChangeRequest" author="florent.sarat" bonitaVersion="7.11.0" bonitaModelVersion="7.11.0-002" configId="ACED000574001F4368616E676552657175657374372E31312E302D303032372E31312E307370">
     <elements xmi:type="process:Pool" xmi:id="_xuKhYc8IEemAgNsKV_wbPw" name="Card Item Change Request" displayName="">
       <elements xmi:type="process:Lane" xmi:id="_xuKhYs8IEemAgNsKV_wbPw" name="Customer Service" actor="_RCF2ANB3EemeM-xP02bjmw">
         <elements xmi:type="process:StartEvent" xmi:id="_xuKhY88IEemAgNsKV_wbPw" name="Start Change Request" outgoing="_axGusM_XEemGzZ4QJjrAcw">
@@ -876,7 +876,7 @@
       <actors xmi:type="process:Actor" xmi:id="_4ZAr8M8MEemAgNsKV_wbPw" name="PreProd"/>
       <actors xmi:type="process:Actor" xmi:id="_BCZl0M8cEemAgNsKV_wbPw" name="Prod"/>
       <actors xmi:type="process:Actor" xmi:id="_RCF2ANB3EemeM-xP02bjmw" name="CS" initiator="true"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_c-TqcON9EemWL715fOxBZQ" name="Qualification" version="7.10.0-001" username="ludo.daclun" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_c-TqcON9EemWL715fOxBZQ" name="Qualification" version="7.11.0-002" username="ludo.daclun" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_c-URgON9EemWL715fOxBZQ">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_c-URgeN9EemWL715fOxBZQ" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_c-URguN9EemWL715fOxBZQ">
@@ -921,6 +921,10 @@
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_mIL3YP_JEemWsLquvXG5Xw" type="CONNECTOR" definitionId="cmis-uploadnewdocument" definitionVersion="2.0.1" implementationId="cmis-uploadnewdocument" implementationVersion="3.0.3"/>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="__xb4sACpEeqOHN09c0eGLQ" type="CONNECTOR" definitionId="cmis-downloaddocument" definitionVersion="2.0.1" implementationId="cmis-downloaddocument" implementationVersion="3.0.3"/>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_wlWdIAC2Eeqk36DD70ZFuQ" type="CONNECTOR" definitionId="email" definitionVersion="1.1.0" implementationId="email-impl" implementationVersion="1.2.1"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_baGawEEJEeqq9oGj0VcvYg" type="CONNECTOR" definitionId="cmis-deletefolder" definitionVersion="2.0.1" implementationId="cmis-deletefolder" implementationVersion="3.0.3"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_bav7AEEJEeqq9oGj0VcvYg" type="CONNECTOR" definitionId="cmis-deletedocument" definitionVersion="2.0.1" implementationId="cmis-deletedocument" implementationVersion="3.0.3"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_bbYNIEEJEeqq9oGj0VcvYg" type="CONNECTOR" definitionId="cmis-deleteversionofdocument" definitionVersion="2.0.1" implementationId="cmis-deleteversionofdocument" implementationVersion="3.0.3"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_bb5KgEEJEeqq9oGj0VcvYg" type="CONNECTOR" definitionId="cmis-uploadnewversionofdocument" definitionVersion="2.0.1" implementationId="cmis-uploadnewversionofdocument" implementationVersion="3.0.3"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c-Tqc-N9EemWL715fOxBZQ" id="ACTOR_FILTER"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c-TqduN9EemWL715fOxBZQ" id="CONNECTOR">
           <children xmi:type="configuration:FragmentContainer" xmi:id="_mH9N4P_JEemWsLquvXG5Xw" id="cmis-createfolder-3.0.3">
@@ -1052,6 +1056,98 @@
           <children xmi:type="configuration:FragmentContainer" xmi:id="_wlltsAC2Eeqk36DD70ZFuQ" id="email-impl-1.2.1">
             <fragments xmi:type="configuration:Fragment" xmi:id="_wlzJEAC2Eeqk36DD70ZFuQ" key="email-impl -- 1.2.1" value="bonita-connector-email-1.2.1.jar" type="CONNECTOR"/>
             <fragments xmi:type="configuration:Fragment" xmi:id="_wlzJEQC2Eeqk36DD70ZFuQ" key="email-impl -- 1.2.1" value="mail-1.4.7.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_baeOMEEJEeqq9oGj0VcvYg" id="cmis-deletefolder-3.0.3">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bauF0EEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="bonita-connector-cmis-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bauF0UEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="cxf-rt-databinding-jaxb-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bauF0kEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="chemistry-opencmis-client-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bauF00EJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="cxf-rt-frontend-jaxws-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bauF1EEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="cxf-rt-bindings-xml-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bauF1UEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="cxf-rt-transports-http-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bauF1kEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="chemistry-opencmis-client-bindings-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bauF10EJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="cxf-rt-wsdl-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bauF2EEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="wsdl4j-1.6.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bauF2UEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="xmlschema-core-2.2.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bauF2kEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="cxf-rt-bindings-soap-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_baus4EEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="cxf-core-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_baus4UEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="asm-3.3.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_baus4kEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="neethi-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_baus40EJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="chemistry-opencmis-client-impl-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_baus5EEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="cxf-rt-ws-addr-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_baus5UEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="chemistry-opencmis-commons-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_baus5kEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="cxf-rt-ws-policy-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_baus50EJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="xml-resolver-1.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_baus6EEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="cxf-rt-frontend-simple-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_baus6UEJEeqq9oGj0VcvYg" key="cmis-deletefolder -- 3.0.3" value="chemistry-opencmis-commons-impl-1.1.0.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_bbMm8EEJEeqq9oGj0VcvYg" id="cmis-deletedocument-3.0.3">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbVw4EEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="bonita-connector-cmis-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_AEEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="cxf-rt-databinding-jaxb-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_AUEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="chemistry-opencmis-client-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_AkEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="cxf-rt-frontend-jaxws-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_A0EJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="cxf-rt-bindings-xml-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_BEEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="cxf-rt-transports-http-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_BUEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="chemistry-opencmis-client-bindings-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_BkEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="cxf-rt-wsdl-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_B0EJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="wsdl4j-1.6.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_CEEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="xmlschema-core-2.2.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_CUEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="cxf-rt-bindings-soap-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_CkEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="cxf-core-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_C0EJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="asm-3.3.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_DEEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="neethi-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_DUEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="chemistry-opencmis-client-impl-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_DkEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="cxf-rt-ws-addr-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_D0EJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="chemistry-opencmis-commons-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_EEEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="cxf-rt-ws-policy-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_EUEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="xml-resolver-1.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_EkEJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="cxf-rt-frontend-simple-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bbW_E0EJEeqq9oGj0VcvYg" key="cmis-deletedocument -- 3.0.3" value="chemistry-opencmis-commons-impl-1.1.0.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_bbzq8EEJEeqq9oGj0VcvYg" id="cmis-deleteversionofdocument-3.0.3">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VUEEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="bonita-connector-cmis-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VUUEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="cxf-rt-databinding-jaxb-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VUkEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="chemistry-opencmis-client-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VU0EJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="cxf-rt-frontend-jaxws-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VVEEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="cxf-rt-bindings-xml-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VVUEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="cxf-rt-transports-http-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VVkEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="chemistry-opencmis-client-bindings-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VV0EJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="cxf-rt-wsdl-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VWEEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="wsdl4j-1.6.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VWUEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="xmlschema-core-2.2.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VWkEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="cxf-rt-bindings-soap-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VW0EJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="cxf-core-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VXEEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="asm-3.3.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VXUEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="neethi-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VXkEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="chemistry-opencmis-client-impl-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VX0EJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="cxf-rt-ws-addr-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VYEEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="chemistry-opencmis-commons-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VYUEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="cxf-rt-ws-policy-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VYkEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="xml-resolver-1.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb3VY0EJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="cxf-rt-frontend-simple-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bb38YEEJEeqq9oGj0VcvYg" key="cmis-deleteversionofdocument -- 3.0.3" value="chemistry-opencmis-commons-impl-1.1.0.jar" type="CONNECTOR"/>
+          </children>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_bcNTkEEJEeqq9oGj0VcvYg" id="cmis-uploadnewversionofdocument-3.0.3">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcV2cEEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="bonita-connector-cmis-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcV2cUEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="cxf-rt-databinding-jaxb-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcV2ckEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="chemistry-opencmis-client-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcV2c0EJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="cxf-rt-frontend-jaxws-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcV2dEEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="cxf-rt-bindings-xml-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcV2dUEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="cxf-rt-transports-http-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdgEEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="chemistry-opencmis-client-bindings-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdgUEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="cxf-rt-wsdl-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdgkEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="wsdl4j-1.6.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdg0EJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="xmlschema-core-2.2.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdhEEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="cxf-rt-bindings-soap-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdhUEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="cxf-core-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdhkEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="asm-3.3.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdh0EJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="neethi-3.0.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdiEEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="chemistry-opencmis-client-impl-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdiUEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="cxf-rt-ws-addr-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdikEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="chemistry-opencmis-commons-api-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdi0EJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="cxf-rt-ws-policy-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdjEEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="xml-resolver-1.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdjUEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="cxf-rt-frontend-simple-3.0.12.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_bcWdjkEJEeqq9oGj0VcvYg" key="cmis-uploadnewversionofdocument -- 3.0.3" value="chemistry-opencmis-commons-impl-1.1.0.jar" type="CONNECTOR"/>
           </children>
         </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_c-TqeuN9EemWL715fOxBZQ" id="DATA_TYPES"/>
@@ -1322,7 +1418,7 @@
         <condition xmi:type="expression:Expression" xmi:id="_oZQcwtPEEemAjNXA0wRbVg" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_oucYgNOWEemAjNXA0wRbVg" name="Vault"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_sRkZION9EemWL715fOxBZQ" name="Qualification" version="7.10.0-001" username="ludo.daclun" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_sRkZION9EemWL715fOxBZQ" name="Qualification" version="7.11.0-002" username="ludo.daclun" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_sRlAMON9EemWL715fOxBZQ">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_sRlAMeN9EemWL715fOxBZQ" name="Vault">
             <groups xmi:type="actormapping:Groups" xmi:id="_sRlAMuN9EemWL715fOxBZQ">
@@ -1470,7 +1566,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_K8LwQdVwEemNabd6uhP5kg"/>
         <condition xmi:type="expression:Expression" xmi:id="_K8LwQtVwEemNabd6uhP5kg" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_sS514ON9EemWL715fOxBZQ" name="Qualification" version="7.10.0-001" username="ludo.daclun" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_sS514ON9EemWL715fOxBZQ" name="Qualification" version="7.11.0-002" username="ludo.daclun" password="bpm">
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_sS514eN9EemWL715fOxBZQ" id="ACTOR_FILTER"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_sS514uN9EemWL715fOxBZQ" id="CONNECTOR"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_sS514-N9EemWL715fOxBZQ" id="DATA_TYPES"/>
