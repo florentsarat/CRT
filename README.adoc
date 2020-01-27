@@ -1,0 +1,522 @@
+= CRT
+Generated with Bonita
+v7.11.0, {docdate}
+:toc:
+:toc-title: Table of contents
+:toclevels: 3
+:bonita-version: 7.11
+:imagesdir: ./documentation/images
+:sectnums: numbered
+:sectanchors:
+:hardbreaks:
+:experimental:
+
+== Business Data Model
+
+image::bdm.svg[]
+
+=== Package com.company.model
+
+==== cardOrder
+
+_No description available_
+
+===== icon:list[] Attributes
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Name                                     |Type   |Description
+|[[cardOrder.persistenceId]]persistenceId*|Long   |           
+|[[cardOrder.itemRef]]itemRef             |String |           
+|[[cardOrder.qtyToOrder]]qtyToOrder       |Integer|           
+|[[cardOrder.orderStatus]]orderStatus     |String |           
+|===
+
+==== itemChangeRequestv2
+
+_No description available_
+
+===== icon:list[] Attributes
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Name                                                                          |Type     |Description
+|[[itemChangeRequestv2.persistenceId]]persistenceId*                           |Long     |           
+|[[itemChangeRequestv2.userId]]userId*                                         |Long     |           
+|[[itemChangeRequestv2.customerRequesting]]customerRequesting                  |String   |           
+|[[itemChangeRequestv2.oldItemId]]oldItemId                                    |String   |           
+|[[itemChangeRequestv2.newItemId]]newItemId                                    |String   |           
+|[[itemChangeRequestv2.targetDeliveryDate]]targetDeliveryDate                  |LocalDate|           
+|[[itemChangeRequestv2.priority]]priority                                      |String   |           
+|[[itemChangeRequestv2.status]]status                                          |String   |           
+|[[itemChangeRequestv2.customerJustification]]customerJustification            |String   |           
+|[[itemChangeRequestv2.feasibilityResultPP]]feasibilityResultPP                |String   |           
+|[[itemChangeRequestv2.feasibilityResultProd]]feasibilityResultProd            |String   |           
+|[[itemChangeRequestv2.feasibilityRejectReasonPP]]feasibilityRejectReasonPP    |String   |           
+|[[itemChangeRequestv2.feasibilityRejectReasonProd]]feasibilityRejectReasonProd|String   |           
+|[[itemChangeRequestv2.dryTestResult]]dryTestResult                            |String   |           
+|[[itemChangeRequestv2.customerValidation]]customerValidation                  |String   |           
+|[[itemChangeRequestv2.goLiveDate]]goLiveDate                                  |String   |           
+|[[itemChangeRequestv2.stockStatus]]stockStatus                                |String   |           
+|[[itemChangeRequestv2.changeCost]]changeCost                                  |String   |           
+|[[itemChangeRequestv2.items]]items                                            |String   |           
+|[[itemChangeRequestv2.qtyToOrder]]qtyToOrder                                  |Integer  |           
+|[[itemChangeRequestv2.Owner]]Owner                                            |String   |           
+|[[itemChangeRequestv2.caseID]]caseID                                          |Long     |           
+|===
+
+===== icon:search[] Queries
+
+====== getListForAll
+
+Return type: _List<itemChangeRequestv2>_
+_No description available_
+
+.Query parameters
+[caption=,grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Name      |Type|Description
+|startIndex|int |           
+|maxResults|int |           
+|===
+
+====== getAllPendingByUser
+
+Return type: _List<itemChangeRequestv2>_
+_No description available_
+
+.Query parameters
+[caption=,grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Name      |Type|Description
+|userId    |Long|           
+|startIndex|int |           
+|maxResults|int |           
+|===
+
+==== purchaseOrder
+
+_No description available_
+
+===== icon:list[] Attributes
+
+[grid=cols,options="header",cols="1,1e,3a",stripes=even,frame=topbot]
+|===
+|Name                                         |Type   |Description
+|[[purchaseOrder.persistenceId]]persistenceId*|Long   |           
+|[[purchaseOrder.itemRef]]itemRef             |String |           
+|[[purchaseOrder.qty]]qty                     |Integer|           
+|[[purchaseOrder.price]]price                 |Float  |           
+|[[purchaseOrder.orderStatus]]orderStatus     |String |           
+|===
+
+== Applications
+
+=== CRT (1.0)
+
+_No description available_
+
+[horizontal]
+Profile:: <<profile.user,User>>
+URL:: ../apps/CRT
+Home page:: Dashboard
+
+==== Look and Feel
+
+[grid=cols,options="",cols="1,2",stripes=even,frame=topbot]
+|===
+|Layout|custompage_layoutBonita         
+|Theme |custompage_bootstrapdefaulttheme
+|===
+
+==== Pages
+
+===== Navigation
+
+[grid=cols,options="header",cols="2a,1",stripes=even,frame=topbot]
+|===
+|Menu   |Application Page
+|My menu|CRTDashoard     
+|===
+
+== Diagrams
+
+=== ChangeRequest (1.0)
+
+_No description available_
+
+image::diagrams/ChangeRequest-1.0.png[]
+
+==== Card Item Change Request (1.0)
+
+_No description available_
+
+image::processes/Card Item Change Request-1.0.png[]
+
+===== icon:users[] Actors
+
+[grid=cols,options="header",cols="1,3a",stripes=even,frame=topbot]
+|===
+|Name                                                                                     |Description                                                 
+|[[card-item-change-request-1.0.actor.employee-actor]]Employee actor                      |This is an example of actor that is mapped to any ACME users
+|[[card-item-change-request-1.0.actor.preprod]]PreProd                                    |                                                            
+|[[card-item-change-request-1.0.actor.prod]]Prod                                          |                                                            
+|[[card-item-change-request-1.0.actor.cs]]CS icon:play-circle-o[title="Process initiator"]|                                                            
+|===
+
+===== icon:file[] Documents
+
+[grid=cols,options="header",cols="1,3a",stripes=even,frame=topbot]
+|===
+|Name                                                                       |Description
+|[[card-item-change-request-1.0.doc.documentinword]]documentInWord          |           
+|[[card-item-change-request-1.0.doc.documentoutpdf]]documentOutPDF          |           
+|[[card-item-change-request-1.0.doc.documentwordchanged]]documentWordChanged|           
+|[[card-item-change-request-1.0.doc.doctodownload]]docToDownload            |           
+|===
+
+===== image:icons/Lane.png[title="Lane"] Customer Service (<<card-item-change-request-1.0.actor.cs,CS>>)
+
+_No description available_
+
+===== image:icons/Lane.png[title="Lane"] PreProd (<<card-item-change-request-1.0.actor.preprod,PreProd>>)
+
+_No description available_
+
+===== image:icons/Lane.png[title="Lane"] Prod (<<card-item-change-request-1.0.actor.prod,Prod>>)
+
+_No description available_
+
+===== [[card-item-change-request-1.0.flowelement.start-change-request]]image:icons/StartEvent.png[title="StartEvent"] Start Change Request
+
+_No description available_
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<card-item-change-request-1.0.flowelement.definerequest,DefineRequest>>*
+
+===== [[card-item-change-request-1.0.flowelement.definerequest]]image:icons/Task.png[title="Task"] DefineRequest
+
+_No description available_
+
+*Previous flow element(s)*: <<card-item-change-request-1.0.flowelement.start-change-request,Start Change Request>>
+
+====== icon:plug[] Connectors out
+
+*Generate pdf from an office document: GenPDFTest*
+*Insert data in a .docx/.odt template: Test*
+*Create a folder: TestFolderCMIS*
+*Upload a document: UploadMyPDF*
+*Delete a folder: testDelete*
+*Delete a document: deleteDoc*
+*Delete a document version: testVerDel*
+*Upload a new version: newVer*
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<card-item-change-request-1.0.flowelement.approve-request,Approve Request>>*
+
+===== [[card-item-change-request-1.0.flowelement.approve-request]]image:icons/Task.png[title="Task"] Approve Request
+
+_No description available_
+
+*Previous flow element(s)*: <<card-item-change-request-1.0.flowelement.definerequest,DefineRequest>>
+
+====== icon:plug[] Connectors in
+
+*Download a document: DownloadFileTest*
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+To <<card-item-change-request-1.0.flowelement.end1,End1>> (default)::
++
+.When:
+[source,groovy]
+----
+itemChangeRequest.status == "refusedbyManager"
+----
+
+To <<card-item-change-request-1.0.flowelement.pre-prod-feasibility,Pre prod feasibility>>::
++
+.When:
+[source,groovy]
+----
+itemChangeRequest.status == "Pending Feasibility Analysis"
+----
+
+To <<card-item-change-request-1.0.flowelement.prod-feasibility,Prod feasibility>>::
++
+.When:
+[source,groovy]
+----
+itemChangeRequest.status == "Pending Feasibility Analysis"
+----
+
+===== [[card-item-change-request-1.0.flowelement.prod-feasibility]]image:icons/ServiceTask.png[title="ServiceTask"] Prod feasibility
+
+_No description available_
+
+*Previous flow element(s)*: <<card-item-change-request-1.0.flowelement.approve-request,Approve Request>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+To <<card-item-change-request-1.0.flowelement.gateway2,Gateway2>>::
++
+.When:
+[source,groovy]
+----
+if (stockValue != "NULL")
+	{
+		if (Integer.parseInt(stockValue) > 0)
+			{
+			true
+			}
+		else
+			{
+				false
+			}
+	}
+else
+	{
+		false
+	}
+----
+
+To <<card-item-change-request-1.0.flowelement.call-activity1,Call activity1>>::
++
+.When:
+[source,groovy]
+----
+stockValue == "0"
+----
+
+===== [[card-item-change-request-1.0.flowelement.gateway2]]image:icons/InclusiveGateway.png[title="InclusiveGateway"] Gateway2
+
+_No description available_
+
+*Previous flow element(s)*: <<card-item-change-request-1.0.flowelement.prod-feasibility,Prod feasibility>>, <<card-item-change-request-1.0.flowelement.call-activity1,Call activity1>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<card-item-change-request-1.0.flowelement.gateway1,Gateway1>>*
+
+===== [[card-item-change-request-1.0.flowelement.call-activity1]]image:icons/CallActivity.png[title="CallActivity"] Call activity1
+
+_No description available_
+
+*Previous flow element(s)*: <<card-item-change-request-1.0.flowelement.prod-feasibility,Prod feasibility>>
+
+====== icon:plus-square[] Called process
+
+<<cardOrder (1.0)>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<card-item-change-request-1.0.flowelement.gateway2,Gateway2>> (default)*
+
+===== [[card-item-change-request-1.0.flowelement.pre-prod-feasibility]]image:icons/Task.png[title="Task"] Pre prod feasibility
+
+_No description available_
+
+*Previous flow element(s)*: <<card-item-change-request-1.0.flowelement.approve-request,Approve Request>>
+
+====== icon:plug[] Connectors in
+
+*Email (SMTP): SendEmailToPP*
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+To <<card-item-change-request-1.0.flowelement.gateway1,Gateway1>>::
++
+.When:
+[source,groovy]
+----
+itemChangeRequest.feasibilityResultPP=="OK"
+----
+
+To <<card-item-change-request-1.0.flowelement.stopprocess,StopProcess>> (default)::
++
+.When:
+[source,groovy]
+----
+itemChangeRequest.feasibilityResultPP=="NOK"
+----
+
+===== [[card-item-change-request-1.0.flowelement.stopprocess]]image:icons/EndTerminatedEvent.png[title="EndTerminatedEvent"] StopProcess
+
+_No description available_
+
+*Previous flow element(s)*: <<card-item-change-request-1.0.flowelement.pre-prod-feasibility,Pre prod feasibility>>
+
+===== [[card-item-change-request-1.0.flowelement.gateway1]]image:icons/ANDGateway.png[title="ANDGateway"] Gateway1
+
+_No description available_
+
+*Previous flow element(s)*: <<card-item-change-request-1.0.flowelement.pre-prod-feasibility,Pre prod feasibility>>, <<card-item-change-request-1.0.flowelement.gateway2,Gateway2>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<card-item-change-request-1.0.flowelement.closingstep,ClosingStep>>*
+
+===== [[card-item-change-request-1.0.flowelement.closingstep]]image:icons/ServiceTask.png[title="ServiceTask"] ClosingStep
+
+_No description available_
+
+*Previous flow element(s)*: <<card-item-change-request-1.0.flowelement.gateway1,Gateway1>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<card-item-change-request-1.0.flowelement.end1,End1>>*
+
+===== [[card-item-change-request-1.0.flowelement.end1]]image:icons/EndEvent.png[title="EndEvent"] End1
+
+_No description available_
+
+*Previous flow element(s)*: <<card-item-change-request-1.0.flowelement.approve-request,Approve Request>>, <<card-item-change-request-1.0.flowelement.closingstep,ClosingStep>>
+
+==== cardOrder (1.0)
+
+_No description available_
+
+image::processes/cardOrder-1.0.png[]
+
+===== icon:users[] Actors
+
+[grid=cols,options="header",cols="1,3a",stripes=even,frame=topbot]
+|===
+|Name                              |Description
+|[[cardorder-1.0.actor.vault]]Vault|           
+|===
+
+===== [[cardorder-1.0.flowelement.start-card-order]]image:icons/StartEvent.png[title="StartEvent"] Start card order
+
+_No description available_
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<cardorder-1.0.flowelement.validateorder,ValidateOrder>>*
+
+===== [[cardorder-1.0.flowelement.validateorder]]image:icons/Task.png[title="Task"] ValidateOrder
+
+_No description available_
+
+*Previous flow element(s)*: <<cardorder-1.0.flowelement.start-card-order,Start card order>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+To <<cardorder-1.0.flowelement.end3,End3>> (default)::
++
+.When:
+[source,groovy]
+----
+cardOrderFromRequest.stockStatus=="OrderRefused"
+----
+
+To <<cardorder-1.0.flowelement.generate-order,Generate Order>>::
++
+.When:
+[source,groovy]
+----
+cardOrderFromRequest.stockStatus=="Order Validated"
+----
+
+===== [[cardorder-1.0.flowelement.generate-order]]image:icons/ScriptTask.png[title="ScriptTask"] Generate Order
+
+_No description available_
+
+*Previous flow element(s)*: <<cardorder-1.0.flowelement.validateorder,ValidateOrder>>
+
+====== icon:plug[] Connectors in
+
+*System script: ScriptTest*
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<cardorder-1.0.flowelement.purchase,Purchase>>*
+
+===== [[cardorder-1.0.flowelement.purchase]]image:icons/IntermediateThrowMessageEvent.png[title="IntermediateThrowMessageEvent"] Purchase
+
+_No description available_
+
+*Previous flow element(s)*: <<cardorder-1.0.flowelement.generate-order,Generate Order>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<cardorder-1.0.flowelement.dosomething,DoSomething>>*
+
+===== [[cardorder-1.0.flowelement.dosomething]]image:icons/Activity.png[title="Activity"] DoSomething
+
+_No description available_
+
+*Previous flow element(s)*: <<cardorder-1.0.flowelement.purchase,Purchase>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<cardorder-1.0.flowelement.getfeedbackfrompurchasing,GetFeedbackFromPurchasing>>*
+
+===== [[cardorder-1.0.flowelement.getfeedbackfrompurchasing]]image:icons/IntermediateCatchMessageEvent.png[title="IntermediateCatchMessageEvent"] GetFeedbackFromPurchasing
+
+_No description available_
+
+*Previous flow element(s)*: <<cardorder-1.0.flowelement.dosomething,DoSomething>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<cardorder-1.0.flowelement.finalizeorder,FinalizeOrder>>*
+
+===== [[cardorder-1.0.flowelement.finalizeorder]]image:icons/ServiceTask.png[title="ServiceTask"] FinalizeOrder
+
+_No description available_
+
+*Previous flow element(s)*: <<cardorder-1.0.flowelement.getfeedbackfrompurchasing,GetFeedbackFromPurchasing>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<cardorder-1.0.flowelement.end3,End3>>*
+
+===== [[cardorder-1.0.flowelement.end3]]image:icons/EndEvent.png[title="EndEvent"] End3
+
+_No description available_
+
+*Previous flow element(s)*: <<cardorder-1.0.flowelement.validateorder,ValidateOrder>>, <<cardorder-1.0.flowelement.finalizeorder,FinalizeOrder>>
+
+==== purchasing  (1.0)
+
+_No description available_
+
+image::processes/purchasing -1.0.png[]
+
+===== [[purchasing--1.0.flowelement.purchase]]image:icons/StartMessageEvent.png[title="StartMessageEvent"] Purchase
+
+_No description available_
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<purchasing--1.0.flowelement.initiate-values,Initiate Values>>*
+
+===== [[purchasing--1.0.flowelement.initiate-values]]image:icons/ServiceTask.png[title="ServiceTask"] Initiate Values
+
+_No description available_
+
+*Previous flow element(s)*: <<purchasing--1.0.flowelement.purchase,Purchase>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<purchasing--1.0.flowelement.do,Do>>*
+
+===== [[purchasing--1.0.flowelement.do]]image:icons/ServiceTask.png[title="ServiceTask"] Do
+
+_No description available_
+
+*Previous flow element(s)*: <<purchasing--1.0.flowelement.initiate-values,Initiate Values>>
+
+====== icon:arrow-right[] Outgoing transition(s)
+
+*To <<purchasing--1.0.flowelement.end4,End4>>*
+
+===== [[purchasing--1.0.flowelement.end4]]image:icons/EndMessageEvent.png[title="EndMessageEvent"] End4
+
+_No description available_
+
+*Previous flow element(s)*: <<purchasing--1.0.flowelement.do,Do>>
+
