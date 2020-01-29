@@ -1,0 +1,52 @@
+@startuml
+!pragma graphviz_dot jdot
+
+package com.company.model {
+
+    class cardOrder {
+        +persistenceId : Long
+        +itemRef : String
+        +qtyToOrder : Integer
+        +orderStatus : String
+    }
+
+    class itemChangeRequestv2 {
+        +persistenceId : Long
+        +userId : Long
+        +customerRequesting : String
+        +oldItemId : String
+        +newItemId : String
+        +targetDeliveryDate : LocalDate
+        +priority : String
+        +status : String
+        +customerJustification : String
+        +feasibilityResultPP : String
+        +feasibilityResultProd : String
+        +feasibilityRejectReasonPP : String
+        +feasibilityRejectReasonProd : String
+        +dryTestResult : String
+        +customerValidation : String
+        +goLiveDate : String
+        +stockStatus : String
+        +changeCost : String
+        +items : String
+        +qtyToOrder : Integer
+        +Owner : String
+        +caseID : Long
+        == Custom queries ==
+        +getListForAll(int startIndex, int maxResults) : List<itemChangeRequestv2>
+        +getAllPendingByUser(Long userId, int startIndex, int maxResults) : List<itemChangeRequestv2>
+    }
+
+    class purchaseOrder {
+        +persistenceId : Long
+        +itemRef : String
+        +qty : Integer
+        +price : Float
+        +orderStatus : String
+    }
+
+
+}
+
+@enduml
